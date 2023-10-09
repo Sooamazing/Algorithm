@@ -1,10 +1,98 @@
 # 기록
 ## Backtracking 문제
 
+
 <details>
-<summary>N과 M (3) - 23/10/08</summary>
+<summary>문제 이름 - 날짜 0뽀 - 성능</summary>
 <div markdown="1">
 <ul>
+<li>공개한 1등 기록: </li>
+<li>문제 핵심</li>
+<ul>
+    <li></li>    
+    <li></li>  
+</ul>
+<li>어려웠던 부분 해결</li>
+<ul>
+    <li></li>
+    <ul>
+        <li></li>
+    </ul>
+    <li></li>
+    <ul>
+        <li></li>
+    </ul>
+</ul>
+<li>순위 코드 분석 후 배운 점</li>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<li>보충이 필요한 지식</li>
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+<li>~칭찬~</li>
+<ul>
+<li></li>
+<ul><li></li></ul>
+</ul>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>N과 M (4) - 23/10/09 1.5뽀 - 15328KB 152ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 15488KB 136ms</li>
+<li>문제 핵심</li>
+<ul>
+    <li>중복 허용</li>    
+    <li>비내림차순</li>  
+</ul>
+<li>어려웠던 부분 해결</li>
+<ul>
+    <li>중복 허용, 비내림차순</li>
+    <ul>
+        <li>수열 loop에서 루프 시작값 설정에 따라 중복 허용 및 비 내림차순 구현</li>
+    </ul>
+    <li>char[] idx</li>
+    <ul>
+        <li>2*M+1, 2*M-1 헷갈리는 등 자잘한 idx 오류 -> 배열에 담길 수 써보고 그대로 구현</li>
+        <li>for 내에서의 변수를 i가 아닌 (for에서는 상수인) M으로 설정해 오류 -> 디버깅으로 실제 들어가는 값 확인해 정정</li>
+    </ul>
+</ul>
+<li>순위 코드 분석 후 배운 점</li>
+<ul>
+    <li>시간 복잡도 고려시, for를 줄이는 게 더 나음.</li>
+    <ul>
+    <li>sb.append(arr[i]).append(' ')와 각 공백 포함 arr[i]에서 sb.append(arr[i]); loop를 도는 수에서 유의미한 시간 차이가 발생한 걸로 추정.</li>
+    </ul>
+    <li>M이 depth라는 점을 제대로 인지함.</li>
+    <li>char[2*M] 대신 비트연산자 사용</li>
+</ul>
+<li>보충이 필요한 지식</li>
+<ul>
+    <li>int를 char로 변환하는 과정에 유의미한 시간이 소요되는지</li> 
+</ul>
+<li>~칭찬~</li>
+<ul>
+<li>어제 배운 거 활용함!</li>
+<ul><li>char[]에 저장, main에서 공백 및 줄바꿈 초기화 해 backtracking 함수 내에서는 최소한 동작만 하도록 구현</li></ul>
+</ul>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary>N과 M (3) - 23/10/08 2뽀 - 214988KB 640ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 64840KB 364ms</li>
 <li>문제 핵심</li>
 <ul>
     <li>중복 숫자를 허용한 수열</li>    
