@@ -42,7 +42,50 @@
 </div>
 </details>
 
+<details>
+<summary>부분 수열의 합 - 23/10/12 1.5뽀 - 14208KB 208ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14068KB 124ms </li>
+<li>문제 핵심</li>
+<ul>
+    <li>조합 + 합 비교</li>   
 
+    //depth==depthLimit sum이 S인지 확인 후 return
+    //조합 찾기
+        //이전 idx+1부터 방문했는지 확인 후 방문하지 않은 곳 선택해 재귀
+
+</ul>
+<li>어려웠던 부분 해결</li>
+<ul>
+    <li>중복 제거를 의도했으나 조합 3개부터는 중복이 들어감.</li>
+    <ul>
+        <li>이전에는 i=depth여서 arr[i]일 때 중복이었음. i=cur로 해결</li>
+    </ul>
+</ul>
+<li>순위 코드 분석 후 배운 점</li>
+<ul>
+    <li>성환님 코드 확인 -> main에서 digit 정하지 않고, 재귀함수에서 i=cur로 그냥 for 돌리기만 해도 모든 조합 구해짐.(순서대로가 아닐 뿐) sum==S 확인하는 과정을 재귀마다 하면 모든 조합에 대해 비교.</li>
+    <li>순위권에 대해서는... 조금 더 공부 필요</li>
+</ul>
+<li>보충이 필요한 지식</li>
+<ul>
+    <li>오름차순으로 정렬 후 sum>S인 경우 return -> 반례가 뭘까? 왜 틀리지?</li>
+    <li>visited를 없애는 방법이 있을까?</li>
+    <li>비트 연산자를 활용하는 이유?</li>
+    <li>재귀함수의 동작 과정에 대해서 조금 더 공부하기. - for문 내 i=cur 설정만으로도 모든 조합을 구한다는 것.</li>
+    <li>확인한 순위권에서는 전부 하기 코드와 같이 진행했는데, 잘 감이 안 옴.</li>   
+
+    backtracking(depth + 1, sum);   
+    backtracking(depth + 1, sum + arr[depth]);
+</ul>
+<li>~칭찬~</li>
+<ul>
+<li>idx 오류가 자꾸 발생하지만, 그래도 빠르게 문제 파악한 덕에 정답 도출까지 오래 걸리지는 않음!</li>
+</ul>
+</ul>
+</div>
+</details>
 <details>
 <summary>N과 M (5) - 23/10/11 1뽀 - 28776KB 308ms 70등!!</summary>
 <div markdown="1">

@@ -1,7 +1,6 @@
 # 기록
 ## Backtracking 문제
 
-
 <details>
 <summary>문제 이름 - 날짜 0뽀 - 성능</summary>
 <div markdown="1">
@@ -38,6 +37,45 @@
 <ul>
 <li></li>
 <ul><li></li></ul>
+</ul>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary>N과 M (5) - 23/10/11 1뽀 - 28776KB 308ms 70등!!</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 28372KB 268ms</li>
+<li>문제 핵심</li>
+<ul>
+    <li>입력 받은 수로 순열 구하기</li>    
+    <li>입력 받은 수와 digit의 idx 설정에 유의</li>  
+</ul>
+<li>어려웠던 부분 해결</li>
+<ul>
+    <li>sb에 공백 추가가 아니라 공백을 출력해서 오류</li>
+    <ul>
+        <li>컴파일러는 잘못하지 않는다...</li>
+    </ul>
+    <li>result, numArr를 따로 구현하지 않아 이상한 수 출력 </li>
+    <ul><li>역시 구조화를 해야 함.</li>
+    </ul>
+</ul>
+<li>순위 코드 분석 후 배운 점</li>
+<ul>
+    <li>로직은 거의 비슷</li>
+    <li>추후 파라미터로 문자열 넘기기 도전</li>
+</ul>
+<li>보충이 필요한 지식</li>
+<ul>
+    <li>dfs-for 내에서 조건 맞으면 시행하는 것보다 continue로 구현하면 더 빠른가?</li>
+</ul>
+<li>~칭찬~</li>
+<ul>
+<li>뚝딱뚝딱~ 구조를 짜고 했다면 더 좋았겠지만, 늘어지는 것보단 풀기를 택해서 풀어낸 게 장하다!</li>
+<li>N과 M은.. 그래도 이제 진짜... 어느 정도는 익힌 듯.</li>
 </ul>
 </ul>
 </div>
