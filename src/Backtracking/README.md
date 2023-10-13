@@ -6,6 +6,7 @@
 <div markdown="1">
 <ul>
 <li>공개한 1등 기록: </li>
+<li>추정 시간 복잡도: </li>
 <li>문제 핵심</li>
 <ul>
     <li></li>    
@@ -41,6 +42,50 @@
 </ul>
 </div>
 </details>
+
+
+
+<details>
+<summary>스타트와 링크 - 23/10/13 8뽀 - 19648KB 268ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14704KB 140ms </li>
+<li>문제 핵심</li>
+<ul>
+    <li></li>    
+    <li></li>  
+</ul>
+<li>어려웠던 부분 해결</li>
+<ul>
+    <li></li>
+    <ul>
+        <li></li>
+    </ul>
+    <li></li>
+    <ul>
+        <li></li>
+    </ul>
+</ul>
+<li>순위 코드 분석 후 배운 점</li>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<li>보충이 필요한 지식</li>
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+<li>~칭찬~</li>
+<ul>
+<li></li>
+<ul><li></li></ul>
+</ul>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary>부분 수열의 합 - 23/10/12 1.5뽀 - 14208KB 208ms</summary>
