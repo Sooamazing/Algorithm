@@ -7,6 +7,12 @@
     - Online 편집기를 사용하며 다져진 실력을 뽐내 보자!
 - 알아 보기 쉽게 코드 작성하기!
 
+# 각 폴더 README 이동 링크
+- [DP 문제](https://github.com/Sooamazing/Algorithm/tree/main/src/DP#dp-%EB%AC%B8%EC%A0%9C)
+- [BFS, DFS 문제](https://github.com/Sooamazing/Algorithm/tree/main/src/BFSDFS#bfs-dfs-%EB%AC%B8%EC%A0%9C)
+- [Backtracking 문제](https://github.com/Sooamazing/Algorithm/tree/main/src/Backtracking#backtracking-%EB%AC%B8%EC%A0%9C)
+
+
 ## 각 폴더 내 README 구조
 
 - 문제
@@ -17,6 +23,8 @@
 
 ----------
 
-- lastUpdate: 23/10/08
+- lastUpdate: 23/10/15
+-  Update: 23/10/15 - 각 README 링크 추가
 - firstUpdate: 23/10/08
     - 이제는 어느 정도 푸는 시기가 왔다! 올리자! 는 마음으로 깃헙에 올리기 시작~
+    - 목표,각 폴더 내 README 구조 기록.

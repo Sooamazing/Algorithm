@@ -43,44 +43,201 @@
 </div>
 </details>
 
-
+-----
 
 <details>
-<summary>스타트와 링크 - 23/10/13 8뽀 - 19648KB 268ms</summary>
+<summary>(Hint) 스타트와 링크 - 23/10/13 8뽀 - 19648KB 268ms</summary>
 <div markdown="1">
 <ul>
 <li>공개한 1등 기록: 14704KB 140ms </li>
 <li>문제 핵심</li>
 <ul>
-    <li></li>    
-    <li></li>  
+    <li>조합을 이용해 N/2명씩 두 팀으로 나눠 팀 별합, 두 팀의 차 구하기</li>
+    <li>한 팀이 정해지면 다른 팀은 나머지라는 점을 이용</li>
+    <ul>
+        <li>이미 구해 놓은 visited 이용 (N은 최대 20)</li>
+    </ul>
+    <li>동시에 합 구하기</li>
+    <ul><li>이중 for문 내에서 조건 분기로 동시에 합 구하기</li></ul>
 </ul>
 <li>어려웠던 부분 해결</li>
 <ul>
-    <li></li>
-    <ul>
-        <li></li>
+    <li>그동안 sb에 넣고 print만 해서 정작 넣어서 사용하는 법이 어려웠음</li>
+    <ul><li>정답 코드에서 사용하진 않았지만, 조합은 배열 쌍을 다시 list에 저장하고, 수열은 결국 S는 2차원 배열이라는 점에서 배열의 idx 0,1 사용하는 방식으로 구현해냄.</li>
+    <li>정답 코드에서는 결국 조합을 찾으면 바로 사용했는데, 그래서 N과 M 시리즈가 그냥 sb에 넣을 줄 알고, print하면 되는 식으로 출제되었나?</li>
     </ul>
-    <li></li>
+    <li>초기 발상 - 시간 초과</li>
+    <ol>
+        <li>(N개에서 2/N개 만큼 조합 뽑고,(nC(n/2))/2번 하면 중복X 경우의 수 추출 - Start팀</li>
+        <li>해당 조합을 나누는 건 숫자 한 개가 속한 조합을 전부 구하면 한 쪽은 Start, 다른 쪽은 Link로 나누어 sum, cnt를 두 번 연산하지 않아도 되기 때문.</li>
+        <li>각 Start팀에 없는 Link 팀 구하기
+        </li>
+        <li>추출한 idx 조합 2개 뽑는 순열로 합 구하기 (Start, Link 팀 각각)
+        </li>
+        <li>Math.abs으로 각 팀의 sum 차 구하기</li>
+    </ol>
+    <li>발상 수정 - 시간 초과</li>
+    <ol>
+        <li>N개에서 2/N개 만큼 조합 전부 뽑기 - 반을 나누면 각 Start, Link 팀 완성</li>
+        <li>추출한 idx 조합 전부 2개 뽑는 순열로 합 구하기
+        </li>
+        <li>Math.abs으로 각 팀의 sum 차 구하기</li>
+    </ol>
+    <li>힌트 확인 후 수정</li>
     <ul>
-        <li></li>
+        <li>조합 내에서 팀이 정해지면, visited를 이용해 상대 팀을 바로 결정</li>
+        <li>이중 for문 한 개 내에서 두 개의 팀 전부 합 구하기</li>
     </ul>
+    <details>
+<summary>틀린 코드</summary>
+<div markdown="1">
+
+    //처음부터 시간초과...
+    
+    import java.io.BufferedReader;
+    import java.io.IOException;
+    import java.io.InputStreamReader;
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Map;
+    import java.util.Scanner;
+    import java.util.StringTokenizer;
+    
+    public class Main {
+    static int N;
+    static int[][] S;
+    static boolean[] visited;
+    static int[] comb;
+    static int[] perm;
+    static ArrayList<List<Integer>> combList = new ArrayList();
+    // static StringBuilder sb = new StringBuilder();
+    static int sum = 0;
+
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		S = new int[N + 1][N + 1];
+		visited = new boolean[N];
+		comb = new int[N / 2];
+		perm = new int[N / 2];
+
+		for (int i = 1; i <= N; i++) {
+			st = new StringTokenizer(br.readLine());
+			for (int j = 1; j <= N; j++) {
+				S[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}//입력 및 초기화 완료
+
+		// sb = new StringBuilder();
+		startAndLinkComb(0, 0);
+
+		int[] sumArr = new int[combList.size()];
+		int cnt = 0;
+		for (List<Integer> item : combList) {
+			// System.out.println(">>>");
+			sum = 0;
+			// sb = new StringBuilder();
+			visited = new boolean[N];
+			sumArr[cnt++] = startAndLinkPerm(item, 0);
+			// System.out.println("sum = " + sum);
+			// System.out.println(sb);
+		}
+
+		int lastIdx = sumArr.length - 1;
+		int minSum = Integer.MAX_VALUE;
+		for (int i = 0; i < sumArr.length / 2; i++) {
+			int sum = Math.abs(sumArr[i] - sumArr[lastIdx - i]);
+			minSum = Math.min(sum, minSum);
+		}
+		System.out.println(minSum);
+		// System.out.println("----------");
+		// System.out.println(sb);
+	}
+
+
+	static void startAndLinkComb(int depth, int cur) {
+		//comb = new int[N/2][2];
+		//(N개에서 2/N개 만큼 조합 뽑기(nC(n/2))%2번 하면 중복X 경우의 수 추출
+
+		if (depth == N / 2) {
+			ArrayList<Integer> tempList = new ArrayList<>();
+			for (int i = 0; i < N / 2; i++) {
+				// sb.append(comb[i]).append(" ");
+				tempList.add(comb[i]);
+			}
+			// sb.append("\n");
+			combList.add(tempList);
+			return;
+		}
+
+		for (int i = cur; i < N; i++) {
+
+			//이 조건 왜 여기? 재귀 끝나고가 왜 아니지?
+			// if (depth == 0 & i > 0)
+			// 	return;
+
+			if (visited[i]) {
+				continue;
+			}
+
+			visited[i] = true;
+			comb[depth] = i + 1;
+			startAndLinkComb(depth + 1, i);
+			visited[i] = false;
+		}
+
+	}
+
+	static int startAndLinkPerm(List<Integer> item, int depth) {
+		if (depth == 2) {
+			sum += S[perm[0]][perm[1]];
+			// sb.append(perm[0]).append(" ").append(perm[1]).append(" ");
+			// sb.append(", S: ").append(S[perm[0]][perm[1]]);
+			// sb.append('\n');
+		}
+
+		for (int i = 0; i < N / 2; i++) {
+			if (visited[i]) {
+				continue;
+			}
+			visited[i] = true;
+			perm[depth] = item.get(i);
+			startAndLinkPerm(item, depth + 1);
+			visited[i] = false;
+		}
+
+		return sum;
+
+	}
+
+    }       
+</div>
+</details>
+
 </ul>
 <li>순위 코드 분석 후 배운 점</li>
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>섬의 개수와 비슷하게 for 없이 그냥 재귀로만 조합 가능, 확인한 상위권 전부 이렇게 풀이.</li>
+    <ul><li>재귀함수로 들어온 수 +1 재귀, 여기까지만 하는 재귀 총 2개를 다시 돌리면서 전체 조합 탐색</li></ul>
 </ul>
 <li>보충이 필요한 지식</li>
 <ul>
-    <li></li>
-    <li></li>
+    <li>초기에 조합 -> 순열로 진행하는 건 어느 부분에서 시간 초과가 나는 걸까? (저 발상 자체가 시간 초과인지, 내가 잘못 짠 건지)</li>
+    <li>조합 구할 때 재귀 내에서 분기하는 법을 더 공부하기, 특히 idx 이용와 sum 구하는 방식</li>
+    <li>구한 조합을 저장하는 방법</li>
+    <li>하기 코드는 조합 함수 for의 맨 위에 위치해야 원하는 대로(1번 선수일 때만 조합을 구하고 싶은 것, 그게 절반이니까.) 동작하는데, 그 이유는? (처음에는 for의 마지막에 놓음, 조합 재귀가 끝난 후 다시 돌 때 검사해도 충분하다 생각함) 
+ 
+    if (depth == 0 & i > 0)
+	return;
+
+</li>
+    <li>N개를 뽑는 게 정해져 있는 경우, 숫자 한 개가 들어있는 조합을 전부 구하면 나머지는 각각의 경우에 대응하는 나머지가 구해지는 점. -> 전부 확인해 보고야 확신, 이에 대해서 좀 더 수학적으로 설명(검증)할 수 있으면 좋겠음.</li>
 </ul>
 <li>~칭찬~</li>
 <ul>
-<li></li>
-<ul><li></li></ul>
+<li>어떻게 푸는지는 떠올렸다! 잘했다! visited로 이용하는 것 등 있는 변수, 조건을 최대한 잘 활용할 생각을 더 열심히 하면 되겠다! 조건문과 재귀함수만 이용한 탐색도 좀 더 공부하면 된다!</li>
 </ul>
 </ul>
 </div>
