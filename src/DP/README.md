@@ -46,6 +46,58 @@
 --------
 
 <details>
+<summary>이동하기 - 23/10/16 4.5뽀 - 77880KB 532ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 23036KB 204ms</li>
+<li>문제 핵심<ul>
+<li>대각선은 생각할 필요 없음.<ul>
+<li>대각선으로 한 번 오는 것보다 오른쪽/아래쪽을 한 번 거쳐 오는 게 사탕을 더 많이 담을 수 있음.</li>
+</ul>
+</li>
+<li>idx 고려</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>처음 발상 -&gt; 불확실해 단념<ul>
+<li>최대 합을 구하는 거라 대각선은 의미 X</li>
+<li>이동 수: N+M-2</li>
+<li>dp[이동 수] = 갈 수 있는 지역의 합</li>
+<li>이동 시마다 머물렀던 셀 제외 행/열의 합을 빼 주기.</li>
+</ul>
+</li>
+<li>정답 발상<ul>
+<li>위쪽/왼쪽 중 더 많은 사탕을 가진 쪽의 경로를 택하고 현재 사탕 합치기<pre><code>dpRes[<span class="hljs-string">i</span>][<span class="hljs-symbol">j</span>] = Math.max(dpRes[<span class="hljs-string">i - 1</span>][<span class="hljs-symbol">j</span>], dpRes[<span class="hljs-string">i</span>][<span class="hljs-symbol">j - 1</span>]) + candy[<span class="hljs-string">i</span>][<span class="hljs-symbol">j</span>];
+</code></pre></li>
+</ul>
+</li>
+<li>구현 시 고친 점<ul>
+<li>r=1, c=1인 경우를 각각 구하고, r=2, c=2인 경우를 따로 구하면 예시 코드나 반례는 돌아가는데, 백준 1%에서 틀렸다고 나옴.</li>
+<li>여기서 힌트 확인, 따로 구하지 않고, idx를 1로 설정해서 그냥 1부터 N까지 점화식 구하니 정답. </li>
+<li>동기님이 알아챈 사실: dpRes 배열 이름을 candy라고 잘못 적어서 오류였음...!.. 고치고 돌리니 첫 코드도 맞았음. -&gt; ... 답이 다 나와도 내가 의도한 대로 동작하는지 확인 위해 디버깅 한번 돌려 보기..! 컴파일러가 잡지 못하는 인간오류를... 발견해야 한다...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>r, c 1일 때는 그냥 for 한 개로 합쳐도 무방, 필요한 조건인지 꼭 생각해 보기.</li>
+<li>입력 받으면서 동시에 dp 구하는 것도 가능</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>BFS가 아닌 DP인 이유? 어떤 상황에서 어떤 알고리즘이 더 적절할지 선택하는 법</li>
+<li>점화식의 기준을 잘 파악하기</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>점화식 발상을 해낸 것이 장하다! 비록... 배열명을 틀려서 힌트를 봤지만, dp에 한 걸음 더 다가간 기분~.~</li>
+</ul>
+</li>
+</div>
+</details>
+
+
+<details>
 <summary>(Hint) 2xn 타일링 - 23/10/15 2뽀 - 14324KB 128ms </summary>
 <div markdown="1">
 <ul>
