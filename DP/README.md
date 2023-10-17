@@ -44,6 +44,53 @@
 </details>
 
 --------
+<details>
+<summary>(Hint) 구간 합 구하기 5 - 23/10/17 3뽀 - 118280KB 844ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 26792KB 312ms</li>
+<li><p>문제 핵심</p>
+<ul>
+<li><p>(1,1)부터 해당 위치까지의 구간합을 각 배열에 구하고, 요구하는 구간만의 합을 도출하기</p>
+<pre><code>//(1,1)부터 해당 위치까지의 합
+sumArr[<span class="hljs-string">i</span>][<span class="hljs-symbol">j - 1</span>] + sumArr[<span class="hljs-string">i - 1</span>][<span class="hljs-symbol">j</span>] - sumArr[<span class="hljs-string">i - 1</span>][<span class="hljs-symbol">j - 1</span>] + Integer.parseInt(st.nextToken());
+
+//최종 구간 합
+int prefixSum = sumArr[<span class="hljs-string">x2</span>][<span class="hljs-symbol">y2</span>] - sumArr[<span class="hljs-string">x2</span>][<span class="hljs-symbol">y1-1</span>] - sumArr[<span class="hljs-string">x1-1</span>][<span class="hljs-symbol">y2</span>] + sumArr[<span class="hljs-string">x1-1</span>][<span class="hljs-symbol">y1-1</span>];
+</code></pre></li>
+<li>꼭 그림 확인하고, 부분 -&gt; 전체인 부분 고려하기!</li>
+<li>어디서 어떻게 점화식을 도출할 건지 고민</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>시간 초과<ul>
+<li>시간 초과날 걸 알았지만, 떠오르지 않아 for 진행 -&gt; 역시나 시간 초과라 힌트 확인 후  각 합을 구해 배열에 넣기 성공</li>
+</ul>
+</li>
+<li>구간 합 구하기 오류<ul>
+<li>그림으로 확인 안 하고, (x2, y2) - (x1-1, y1-1) 진행해 틀림 -&gt; 다른 힌트 그림 보고 구획 나눠 답 도출</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>x1, y1 받을 때 로직에서 사용하는 값은 실질적으로 -1이라 처음부터 그렇게 저장</li>
+<li>상위권 대부분 read() 구현해 사용.</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>read() 등 구현 및 메서드 분리</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>시간 초과 날 걸 알았지만, 답이라도 구해 보자는 마음으로! 다음에는 지금 배운 걸 열심히 기억하고 적용하기!</li>
+<li>어제 합을 생각했던 만큼 조금 더 시간을 들였어도 좋았겠지만, 시간 내에 풀지 못한 건 맞으니까. 빠르게 잘 결정했다! </li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary>이동하기 - 23/10/16 4.5뽀 - 77880KB 532ms</summary>

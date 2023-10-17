@@ -23,7 +23,8 @@
 
 ----------
 
-- lastUpdate: 23/10/15
+- lastUpdate: 23/10/17
+-  Update: 23/10/17 - 코드 파일(.java)만 올라가게 .git 폴더 위치 변경, [방법 참고](https://sedangdang.tistory.com/147) 
 -  Update: 23/10/15 - 각 README 링크 추가
 - firstUpdate: 23/10/08
     - 이제는 어느 정도 푸는 시기가 왔다! 올리자! 는 마음으로 깃헙에 올리기 시작~
