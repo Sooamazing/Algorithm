@@ -8,9 +8,10 @@
 - 알아 보기 쉽게 코드 작성하기!
 
 # 각 폴더 README 이동 링크
-- [DP 문제](https://github.com/Sooamazing/Algorithm/tree/main/src/DP#dp-%EB%AC%B8%EC%A0%9C)
-- [BFS, DFS 문제](https://github.com/Sooamazing/Algorithm/tree/main/src/BFSDFS#bfs-dfs-%EB%AC%B8%EC%A0%9C)
-- [Backtracking 문제](https://github.com/Sooamazing/Algorithm/tree/main/src/Backtracking#backtracking-%EB%AC%B8%EC%A0%9C)
+- [DP 문제](DP)
+- [BFS, DFS 문제](BFSDFS)
+- [Backtracking 문제](Backtracking)
+- [이분 탐색 문제](BinarySearch)
 
 
 ## 각 폴더 내 README 구조
@@ -23,7 +24,8 @@
 
 ----------
 
-- lastUpdate: 23/10/17
+- lastUpdate: 23/10/19
+-  Update: 23/10/19 이분 탐색 폴더 추가 및 각 문제 링크 수정
 -  Update: 23/10/17 - 코드 파일(.java)만 올라가게 .git 폴더 위치 변경, [방법 참고](https://sedangdang.tistory.com/147) 
 -  Update: 23/10/15 - 각 README 링크 추가
 - firstUpdate: 23/10/08
