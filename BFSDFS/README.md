@@ -43,6 +43,62 @@
 </div>
 </details>
 
+------------
+
+
+<details>
+<summary> (Hint) 토마토 - 23/10/23 3.5뽀 - 248312KB 1700ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 65960KB 296ms</li>
+<li><p>문제 핵심</p>
+<ul>
+<li>해당하는 다수의 점에서 동시에 탐색을 시작하는 것이 관건</li>
+<li>얼마 만에 다 탐색했는지 cnt, 방문하지 않은 곳 있다면 -1 출력</li>
+<li><p>-1, 1은 이미 방문한 곳 처리</p>
+<ul>
+<li>이때 boolean[] 기본이 false이므로 0인 곳을 갈 곳 true 처리 및 1인 곳 que에 담기</li>
+</ul>
+</li>
+<li><p>dfs 내부</p>
+<ul>
+<li>모두 방문한 곳이면 return</li>
+<li>que가 빌 때까지 갈 곳이면 방문했다는 처리 후 새로운 que에 담기</li>
+<li>que가 비었는지 확인<ul>
+<li>비었으면 return(더이상 갈 곳이 없으므로)</li>
+<li>비지 않았다면 새로운 que, depth+1 전달하며 dfs 실행,</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>어려웠던 부분 해결</p>
+<ul>
+<li>처음에 queue 순서랑 empty인 경우 조건 설정하는 법이 헷갈려서 다른 방법 확인 위해 힌트 확인 -&gt; que 이용</li>
+<li>if문 위치가 중요 -&gt; 그래야 처음부터 다 익은 경우 등 출력 가능</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>숫자 활용 - 기존 익어있는 곳에 +1 하면서 max 찾을 수 있음. </li>
+<li>while 내에 들어가는지, 들어가지 못하는 걸로 분기 나눠 return 가능</li>
+<li>처리해야 하는 토마토 개수 세서 조건 설정</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>자꾸 queue, 재귀 같이 사용 -&gt; queue 제대로 사용하는 법 알기</li>
+<li>분기 나누는 법</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>^_^ 아자!!!!! 생각을 좀만 더 촘촘하게 해 보자~!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
 <details>
 <summary>안전 영역 - 23/10/10 4뽀 - 82596KB 612ms</summary>
 <div markdown="1">
