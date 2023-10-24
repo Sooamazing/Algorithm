@@ -45,6 +45,48 @@
 
 --------
 
+
+<details>
+<summary>(Hint*3) 가장 긴 감소하는 부분 수열 - 23/10/24 3뽀 - 14396KB 148ms </summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14108KB 124ms</li>
+<li>문제 핵심<ul>
+<li><a href="https://velog.io/@kmh9250/%EB%B0%B1%EC%A4%8011722-%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EA%B0%90%EC%86%8C%ED%95%98%EB%8A%94-%EB%B6%80%EB%B6%84-%EC%88%98%EC%97%B4">블로그 참고</a></li>
+<li>if 세 번째 수인 경우 앞선 두 번째까지의 수 중 큰 수가 존재하고, 해당 digit의 dp+1이 현재 digit의 현재 dp보다 크면 then<ul>
+<li>현재 digit의 현재 dp에 해당 digit dp +1<pre><code>dp<span class="hljs-string">[i]</span> = dp<span class="hljs-string">[j]</span> + <span class="hljs-number">1</span>;
+</code></pre></li>
+</ul>
+</li>
+<li>i번째마다 현재 개수와 dp[i]의 개수 중 더 큰 값 구해서 cnt 저장</li>
+</ul>
+</li>
+<li><p>어려웠던 부분 해결</p>
+<ul>
+<li>유니크한 수 구해서 수열로 만들기 set 사용 -&gt; 예제에서 dp 1 1 2 2 2 3 출력까지 도출</li>
+<li>조건식 어려워서 hint 확인 -&gt; 이전 수 전체와의 비교, 그 중 저장된 dp 값이 높은 수+1</li>
+</ul>
+</li>
+<li><p>순위 코드 분석 후 배운 점</p>
+<ul>
+<li>이분 탐색으로도.. 풀 수 있다...</li>
+</ul>
+</li>
+<li><p>보충이 필요한 지식</p>
+<ul>
+<li>이분 탐색으로 푸는 법..!</li>
+</ul>
+</li>
+<li><p>~칭찬~</p>
+<ul>
+<li>음.. 열심히 배웠다!</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</details>
+
 <details>
 <summary>1로 만들기 - 23/10/21 2.5뽀 - 18288KB 148ms</summary>
 <div markdown="1">
