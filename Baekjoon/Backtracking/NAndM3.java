@@ -1,4 +1,4 @@
-package Backtracking;
+package Baekjoon.Backtracking;
 
 import java.io.*;
 import java.util.ArrayList;

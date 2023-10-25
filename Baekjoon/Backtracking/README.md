@@ -1,5 +1,5 @@
 # 기록
-## Backtracking 문제
+## Baekjoon.Backtracking 문제
 
 <details>
 <summary>문제 이름 - 날짜 0뽀 - 성능</summary>
@@ -44,6 +44,38 @@
 </details>
 
 -----
+
+<details>
+<summary>N과 M (6) - 23/10/25 0.5뽀 - 14292KB 124ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14224KB  120ms</li>
+<li>문제 핵심<ul>
+<li>오름차순 순열</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>return, i=cur, cur+1</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>visited 꼭 필요한 때만 하기!</li>
+<li>arr[idx-1]≥num[i]처럼 직접 비교할 수 있음.</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>idx, 함수 종료 조건</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>그래도... 빠르게 풀어내긴 했다....  좀 더 기계적으로 착착 생각할 수 있게 노력하자~!</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</details>
+
 
 <details>
 <summary>(Hint) 스타트와 링크 - 23/10/13 8뽀 - 19648KB 268ms</summary>

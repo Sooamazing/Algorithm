@@ -1,5 +1,5 @@
 # 기록
-## DP 문제
+## Baekjoon.DP 문제
 
 <details>
 <summary>문제 이름 - 날짜 0뽀 - 성능</summary>

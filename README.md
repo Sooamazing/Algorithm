@@ -8,12 +8,16 @@
 - 알아 보기 쉽게 코드 작성하기!
 
 # 각 폴더 README 이동 링크
-- [DP 문제](DP)
-- [BFS, DFS 문제](BFSDFS)
-- [Backtracking 문제](Backtracking)
-- [이분 탐색 문제](BinarySearch)
-- [투 포인터 문제](TwoPointers)
-- [구현](Implement)
+## 백준
+- [Baekjoon.DP 문제](Baekjoon/DP)
+- [BFS, DFS 문제](Baekjoon/BFSDFS)
+- [Baekjoon.Backtracking 문제](Baekjoon/Backtracking)
+- [이분 탐색 문제](Baekjoon/BinarySearch)
+- [투 포인터 문제](Baekjoon/TwoPointers)
+- [구현](Baekjoon/Implement)
+
+## 프로그래머스
+- [PCCP - 1](Programmers/PCCP1)
 
 ## 각 폴더 내 README 구조
 
@@ -25,7 +29,8 @@
 
 ----------
 
-- lastUpdate: 23/10/22
+- lastUpdate: 23/10/25
+-  Update: 23/10/25 프로그래머스 폴더 추가 및 백준 폴더 분리
 -  Update: 23/10/22 구현 폴더 추가
 -  Update: 23/10/21 투 포인터 폴더 추가
 -  Update: 23/10/19 이분 탐색 폴더 추가 및 각 문제 링크 수정
