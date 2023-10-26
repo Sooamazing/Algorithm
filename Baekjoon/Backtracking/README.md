@@ -46,6 +46,39 @@
 -----
 
 <details>
+<summary>N과 M (7) - 23/10/26 0.5뽀 - 122960KB 616ms 16등!!</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 119408KB 568ms</li>
+<li>문제 핵심<ul>
+<li>중복 허용, 모슨 수열</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>return!!!!!!!!!!! </li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>ans 배열을 주어진 범위로 초기화</li>
+<li>sort를 버블 정렬로 구현!</li>
+<li>for-each 사용</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>버블 정렬이 Arrays.sort보다 빠른지?</li>
+<li>ans 배열 초기화를 미리 하는 게 메모리 사용에 유의미한지?</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>같은 문제를 반복해서 풀어서겠지만, 그래도! 순위권 뿌듯하다! 진짜 뚝딱뚝딱~! 10분도 안 돼서 푼 듯!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
 <summary>N과 M (6) - 23/10/25 0.5뽀 - 14292KB 124ms</summary>
 <div markdown="1">
 <ul>
