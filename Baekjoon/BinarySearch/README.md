@@ -1,6 +1,6 @@
 # 기록
-## 이분 탐색 문제
 
+## 이분 탐색 문제
 
 <details>
 <summary>문제 이름 - 날짜 0뽀 - 성능</summary>
@@ -45,6 +45,42 @@
 </details>
 
 -----
+
+
+<details>
+<summary>(Hint)랜선 자르기 - 23/10/27 2뽀 - 25268KB 216ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14252KB 144ms</li>
+<li>문제 핵심<ul>
+<li>가장 긴 랜선 기준으로 이분 탐색으로 자르고, 자른 랜선 길이를 기준으로 나머지 랜선에서 각각 나눠서 총 개수 구해 max 개수 구하기!</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>/ by zero runtime error<ul>
+<li>0으로 나눌 때 에러 발생 -&gt; start 값이 0인 경우 mid가 0인 경우가 생겨서 에러 발생! -&gt; 1로 변경 (이 부분 hint)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>bit 연산자 사용 및 boolean 변수 활용</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>start=1 이어야 하는 이유! 나무 자르기에서는 0도 됐는데!</li>
+<li>start&lt;end 조건!</li>
+<li>/2 대신 비트 연산자를 쓰면 더 좋은 이유?</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>로직 자체는 어렵지 않게 떠올려서 작성했다~! 조건에 대해서 조금 더 공부하고 고민할 시간 필요!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary>(Hint)나무 자르기 - 23/10/19 3뽀 - 123240KB 564ms</summary>
