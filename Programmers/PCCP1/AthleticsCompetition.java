@@ -10,6 +10,12 @@ class AthleticsCompetition {
 		System.out.println(solution(ability2));
 	}
 
+	static int max;
+	static int[] arr;
+	static boolean[] visited;
+	static int categoryNum;
+	static int studentNum;
+
 	public static int solution(int[][] ability) {
 		int answer = 0;
 
@@ -23,13 +29,8 @@ class AthleticsCompetition {
 		return answer;
 	}
 
-	static int max;
-	static int[] arr;
-	static boolean[] visited;
-	static int categoryNum;
-	static int studentNum;
-
 	private static void perm(int[][] ability, int depth) {
+
 		if (depth == categoryNum) {
 			int sum = 0;
 			for (int i = 0; i < categoryNum; i++) {
@@ -40,13 +41,16 @@ class AthleticsCompetition {
 		}
 
 		for (int i = 0; i < studentNum; i++) {
+
 			if (visited[i]) {
 				continue;
 			}
+
 			visited[i] = true;
 			arr[depth] = ability[i][depth];
 			perm(ability, depth + 1);
 			visited[i] = false;
+
 		}
 	}
 }

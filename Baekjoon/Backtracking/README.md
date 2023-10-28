@@ -1,5 +1,5 @@
 # 기록
-## Baekjoon.Backtracking 문제
+## Backtracking 문제
 
 <details>
 <summary>문제 이름 - 날짜 0뽀 - 성능</summary>
@@ -44,6 +44,45 @@
 </details>
 
 -----
+
+<details>
+<summary>N과 M (8) - 23년 10월 28일 0.5뽀 - 16480KB 152ms 2등!! </summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 15780KB 152ms</li>
+<li>문제 핵심<ul>
+<li>비내림차순 순열 구하기</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>bubble 정렬 <pre><code class="lang-java"><span class="hljs-attr">arr[i]</span> = arr[j];
+<span class="hljs-attr">arr[j]</span> = temp;
+<span class="hljs-attr">temp</span> = arr[i];
+</code></pre>
+</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>main에서 사용하는 메서드를 위에 배치해야 더 빠름</li>
+<li>for문이 for-each보다 빠르고, for문 내 비교 변수는 전역 변수보다 지역 변수(파라미터)가 더 빠름</li>
+<li>Arrays.sort보다 버블 정렬이 메모리에서 미세하게 적음(다양한 사례 필요)</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>버블 정렬 외의 정렬</li>
+<li>sb에 ‘ ‘, “ “ 번갈아 넣어도 되는 이유? </li>
+<li>상기 이유 더 빠른 이유, 통상적으로 더 빠른 게 맞는지 확인</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>드디어… return을 제때 하고, 버블 정렬로 구현해 봤다!</li>
+<li>와...  위치를 바꾸는 것만으로... 시간 차이가 나다니 신기하다...</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary>N과 M (7) - 23/10/26 0.5뽀 - 122960KB 616ms 16등!!</summary>
