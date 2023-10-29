@@ -15,6 +15,7 @@
 - [이분 탐색 문제](Baekjoon/BinarySearch)
 - [투 포인터 문제](Baekjoon/TwoPointers)
 - [구현](Baekjoon/Implement)
+- [자료 구조](Baekjoon/DataStructure)
 
 ## 프로그래머스
 - [PCCP - 1](Programmers/PCCP1)
@@ -29,7 +30,8 @@
 
 ----------
 
-- lastUpdate: 23/10/25
+- lastUpdate: 23/10/29
+-  Update: 23/10/29 백준 자료 구조 폴더 추가
 -  Update: 23/10/25 프로그래머스 폴더 추가 및 백준 폴더 분리
 -  Update: 23/10/22 구현 폴더 추가
 -  Update: 23/10/21 투 포인터 폴더 추가
