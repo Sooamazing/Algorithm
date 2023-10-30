@@ -45,6 +45,35 @@
 
 ------------
 
+<details>
+<summary>(Hint*3) 미로 탐색- 23/10/30 4.5뽀 - 14596KB 132ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14528KB 124ms</li>
+<li>문제 핵심<ul>
+<li>최소 거리를 구하는 문제 -&gt; BFS</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>DFS -&gt; DP 로 접근했으나 힌트 확인 후 BFS...! -&gt; 거의 확인하면서 함...</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>que 사용법</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>BFS, DFS를... 잘 모르고 있었다... 왜 최단 거리에는 BFS인지!</li>
+</ul>
+</li>
+<li>~어쩌구~<ul>
+<li>발상은 꽤나... 근접했으나 BFS로 구현한 적이 거의 없어서 상상을 못했다.. 아자~!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary> (Hint) 토마토 - 23/10/23 3.5뽀 - 248312KB 1700ms</summary>
