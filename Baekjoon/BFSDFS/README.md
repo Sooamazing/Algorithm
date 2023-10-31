@@ -44,6 +44,46 @@
 </details>
 
 ------------
+<details>
+<summary>유기농 배추 - 23/10/31 1뽀 - 16580KB 156ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14292KB 124ms</li>
+<li>문제 핵심<ul>
+<li>DFS 진행된 구역이 몇 개니? (섬의 개수와 같은 듯)</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>wow 진짜 하나도 안 막히고 풂..!</li>
+<li>테스트 케이스를 여러 개 돌리면 맨 아래에 엔터 추가해 주면 좋음! → 그러지 않으면 테스트 케이스 이미 돌아간 게 출력된 후에 엔터 치고, 그러면 마지막 출력만 분리됨. 저번에도 이런 일이 있었지..</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>dfs 함수 들어오자마자 방문 처리해 주면, 본문과 for문 내에서 각각 방문 처리하지 않고 단번에 처리 가능. </li>
+<li>queue로 구현해 보기..!</li>
+<li>dfs 함수 내 dxdy 선언하지 않고 범위 나눠서 풂</li>
+<li>무조건 dfs 입장 후 처음에 범위 벗어나는지 검증, boolean 반환해서 true면 answer+1;</li>
+<li>|+, ~ 등 이용<pre><code class="lang-java">int BIT = <span class="hljs-number">6</span>, MASK = ~(<span class="hljs-number">-1</span> &lt;&lt; BIT);
+<span class="hljs-section">state</span> &amp; MASK
+</code></pre>
+</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>System.in.read()로 구현</li>
+<li>비트연산자 이용해서 푸는 법</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>와.. dfs는 정말 최고다.... 진짜로 슉슉 풀어서 넘 뿌듯했고 재밌었다... 이제 이건.. 좀 더 높은 단계 풀어봐도 될 듯...</li>
+<li>이제 진짜... read(), 비트 연산자를.. 슬슬... 공부할 때가 온다....</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
 
 <details>
 <summary>(Hint*3) 미로 탐색- 23/10/30 4.5뽀 - 14596KB 132ms</summary>
