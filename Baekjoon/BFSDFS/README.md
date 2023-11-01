@@ -44,6 +44,40 @@
 </details>
 
 ------------
+
+<details>
+<summary>바이러스 - 23/11/1 2.5뽀 - 14320KB 128ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 13944KB 116ms</li>
+<li>문제 핵심<ul>
+<li>stack 이용</li>
+<li>node로 연결되어 있어서 해당 숫자 담는 1차원 배열 1개와 그래프 방문 가능한지 담은 배열로 갈 곳 탐색</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>배열로 주어지지 않아서 그래프 탐색을 어떻게 해야 할지</li>
+<li>DFS와 BFS 문제 떠올리며 각 노드 배열에 방문 처리!</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>Map<Integer, List<Integer>&gt; 등 이용하는 법!</li>
+<li>그래프에 방문처리할 필요 없이 nodeArr에만 하면 됐음</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>배열로 주어지지 않는 그래프 탐색 연습</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>희미한 정신을 붙잡고 풀이를 떠올렸다!~!~!~!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
 <details>
 <summary>유기농 배추 - 23/10/31 1뽀 - 16580KB 156ms</summary>
 <div markdown="1">
