@@ -113,6 +113,7 @@
 </li>
 <li>궁금한 / 보충이 필요한 부분<ul>
 <li>집계 함수!</li>
+<li>SUM이 빠지면 무슨 값이 나오는 거지?</li>
 </ul>
 </li>
 <li>하고 싶은 말<ul>
@@ -125,6 +126,30 @@
 </details>
 
 ### [Select](Select)
+<details>
+<summary>재구매가 일어난 상품과 회원 리스트 구하기 - 23/11/2 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>GROUP BY 로 두 컬럼을 묶어서 집계 함수 사용하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>GROUP BY 로 두 컬럼을 묶고, count(*) 하면 묶인 걸 기준으로 중복 확인 가능!</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>COUNT(*), COUNT(USER_ID), COUNT(PRODUCT_ID) → 왜 이렇게 가능하고, COUNT(USER_ID, PRODUCT_ID ) 이건 왜 안 되지?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>이거 맞나? 싶은데 풀려서 신기했다..!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 <details>
 <summary>12세 이하인 여자 환자 목록 출력하기 - 23/10/31 0.5뽀</summary>
 <div markdown="1">

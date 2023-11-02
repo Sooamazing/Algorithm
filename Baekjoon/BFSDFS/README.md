@@ -8,42 +8,57 @@
 <ul>
 <li>공개한 1등 기록: </li>
 <li>문제 핵심</li>
-<ul>
-    <li></li>    
-    <li></li>  
-</ul>
 <li>어려웠던 부분 해결</li>
-<ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-</ul>
 <li>순위 코드 분석 후 배운 점</li>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
 <li>보충이 필요한 지식</li>
-<ul>
-    <li></li>
-    <li></li>
-</ul>
 <li>~칭찬~</li>
-<ul>
-<li></li>
-<ul><li></li></ul>
-</ul>
 </ul>
 </div>
 </details>
 
 ------------
+
+<details>
+<summary> 나이트의 이동 - 23/11/2 3뽀 - 85092KB 392ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 65580KB 260ms</li>
+<li>문제 핵심<ul>
+<li>기본 bfs와 차이는 dxdy 좌표 설정하는 방법</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>idx 에러<ul>
+<li>입력 시 idx → 2부터 N+2까지..!</li>
+<li>idx error가 방지 위해 N+4 크기 설정</li>
+<li>idx error 발생해 한 케이스씩 돌려 보니 que 초기화 문제인 걸 발견 → 지역 변수로 초기화해서 오류난 것, 전역 변수 초기화로 해결</li>
+</ul>
+</li>
+<li>depth 찾기<ul>
+<li>재귀에서 파라미터 넘겨주는 것처럼 que에 저장할 때 해당 depth+1로 넘겨줌!</li>
+<li>depth를 출력하는 위치에 따라 cnt, cnt+1 결정.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>bfs 내에서 queue를 이용, 파라미터로 start x,y 받는 걸로 대부분 구현</li>
+<li>int[]로 cnt[px][py] 해당 위치의 숫자를 cnt로 이용 -&gt; 이건 역시 N+4 선언으로 해결하려면 까다로움.</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>메서드로 구현한 게 이 로직을 따로 빼 주는 것 외에는 별 의미가 없는 건지? (재귀와 비교할 때, 재귀는 메서드로 빼는 이유를 알겠는데, 이건 모르겠음.)</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>답들이 생각한 거의 그대로여서 뿌듯했다~.~ int[][]로 cnt 값 이용하는 것도 고민해 본 거라 뿌듯!</li>
+<li>오. queue 사용법 조금은 알 거 같은 기분? 최근에 Queue int[] 로 사용하는 걸 알게된 게 큰 수확이었다.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary>바이러스 - 23/11/1 2.5뽀 - 14320KB 128ms</summary>
@@ -61,7 +76,7 @@
 </ul>
 </li>
 <li>순위 코드 분석 후 배운 점<ul>
-<li>Map<Integer, List<Integer>&gt; 등 이용하는 법!</li>
+<li>Map - Integer, List<Integer>&gt 등 이용하는 법! </li>
 <li>그래프에 방문처리할 필요 없이 nodeArr에만 하면 됐음</li>
 </ul>
 </li>
