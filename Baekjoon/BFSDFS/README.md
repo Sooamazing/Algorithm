@@ -19,6 +19,68 @@
 ------------
 
 <details>
+<summary>(Hint*5) 벽 부수고 이동하기 - 23/11/3 7뽀 - 224548KB 1512ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 117336KB 412ms</li>
+<li>문제 핵심<ul>
+<li>부쉈을 때와 안 부쉈을 때를 나눠서 방문 처리하기.</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>힌트 완전 참고 -&gt; 3차원 배열 개념</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>조건을 섬세하게 나눠서 2차원 배열도 가능</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>조건 나누는 법 공부하기!</li>
+<li>3차원 배열 공부하기..!</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>도전을 했다는 점이 가상하다...</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary>바닥 장식 - 23/11/2 1.5뽀 - 14256KB 124ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14212KB 120ms</li>
+<li>문제 핵심<ul>
+<li>이전 값과 같은 값 찾아서 처리하기!</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>같은 값 찾아주기 -&gt;  if-for 로 해결</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>아예 다음 값과 바로 비교해서 조건 분기할 수 있음</li>
+<li>boolean 이용해 같은 값인지 판별</li>
+<li>이중 for문 하나에 if로만 넣어서 구하기</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>좀 더 효율적으로 비교하는 방식이 있을까?</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>그래도 조건 비교하는 거 생각해서 바로 만들기는 했다..!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary> 나이트의 이동 - 23/11/2 3뽀 - 85092KB 392ms</summary>
 <div markdown="1">
 <ul>

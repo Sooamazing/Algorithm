@@ -2,7 +2,7 @@
 ## SQL 문제 - MySQL 
 
 <details>
-<summary>문제 이름 - 날짜 0뽀</summary>
+<summary><a href="">문제 이름 - 날짜 0뽀</a></summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심</li>
@@ -15,8 +15,32 @@
 
 -----
 ### [Group By](GROUPBY)
+
 <details>
-<summary> (Hint) 가격대 별 상품 개수 구하기 - 23/11/1 0.3뽀</summary>
+<summary><a href="GROUPBY/TotalTransactionAmountMeetsTheCondition.sql"> 조건에 맞는 사용자와 총 거래금액 조회하기</a> - 23/11/2 0.5뽀 </summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>다른 컬럼명으로 JOIN하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>.</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>숫자 단위를 잘 보자! </li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+
+<details>
+<summary> <a href="GROUPBY/FindProductsByPriceRange.sql"> (Hint) 가격대 별 상품 개수 구하기</a>
+ - 23/11/1 0.3뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -41,7 +65,7 @@
 </details>
 
 <details>
-<summary> 동명 동물 수 찾기 - 23/11/1 0.3뽀</summary>
+<summary><a href="GROUPBY/FindTheSameNameAnimals.sql"> 동명 동물 수 찾기 </a> - 23/11/1 0.3뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -60,8 +84,9 @@
 </div>
 </details>
 
+
 <details>
-<summary> 고양이와 개는 몇 마리 있을까 - 23/11/1 0.3뽀</summary>
+<summary> <a href="GROUPBY/HowManyCatsAndDogs.sql">고양이와 개는 몇 마리 있을까</a> - 23/11/1 0.3뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -83,7 +108,32 @@
 ### [Join](JOIN)
 
 <details>
-<summary> (Hint) 조건에 맞는 도서와 저자 리스트 출력하기 - 23/10/31 0.5뽀</summary>
+<summary><a href="JOIN/MissingRecords.sql">없어진 기록 찾기 </a> - 23/11/2 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>LEFT JOIN, Nullable 확인 및 조회할 컬럼 설정</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>문제 표의 null 허용 여부를 잘 보고 비교할 컬럼을 선택해야 함.</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>.</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>총미님도 같이 풀었다! ㅎㅅㅎ 짱짱~! 계속 같이 풀고 싶다!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary><a href="JOIN/PrintBooksAndAuthorList.sql"> (Hint) 조건에 맞는 도서와 저자 리스트 출력하기</a> - 23/10/31 0.5뽀 </summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -98,8 +148,9 @@
 </div>
 </details>
 
+
 <details>
-<summary> (Hint) 상품 별 오프라인 매출 구하기 - 23/10/31 0.5뽀</summary>
+<summary><a href="JOIN/GetSumByProduct.sql">(Hint) 상품 별 오프라인 매출 구하기</a> - 23/10/31 0.5뽀 </summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -126,8 +177,32 @@
 </details>
 
 ### [Select](Select)
+
+
 <details>
-<summary>재구매가 일어난 상품과 회원 리스트 구하기 - 23/11/2 0.2뽀</summary>
+<summary><a href="Select/MemberListBornInMarch.sql"> 3월에 태어난 여성 회원 목록 출력하기</a> - 23/11/02 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>날짜 추출하는 법</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>MONTH()로 추출 가능</li>
+<li>LIKE로 추출 가능</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>DATE_FORMAT 이용법</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary><a href="Select/GetRepurchasedGoodsAndMember.sql"> 재구매가 일어난 상품과 회원 리스트 구하기</a> - 23/11/2 0.2뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -151,7 +226,7 @@
 </details>
 
 <details>
-<summary>12세 이하인 여자 환자 목록 출력하기 - 23/10/31 0.5뽀</summary>
+<summary><a href="Select/PatientUnder12.sql">12세 이하인 여자 환자 목록 출력하기 </a> - 23/10/31 0.5뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -173,3 +248,4 @@
 </ul>
 </div>
 </details>
+
