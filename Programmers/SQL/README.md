@@ -14,6 +14,27 @@
 </details>
 
 -----
+
+### [Is Null](ISNULL)
+
+<details>
+<summary><a href="ISNULL/ProcessingNULL.sql">NULL 처리하기 </a> - 23/11/3 0.1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>NULL 처리하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>IFNULL 사용법</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분</li>
+<li>하고 싶은 말</li>
+</ul>
+</div>
+</details>
+
 ### [Group By](GROUPBY)
 
 <details>
@@ -107,6 +128,28 @@
 
 ### [Join](JOIN)
 
+
+<details>
+<summary><a href="JOIN/ThereWasButThereWasNot.sql">있었는데요 없었습니다</a> - 23/11/3 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>join한 테이블로 날짜 비교</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>datetime 비교하는 법</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>LEFT JOIN, INNER JOIN 기준</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
 <details>
 <summary><a href="JOIN/MissingRecords.sql">없어진 기록 찾기 </a> - 23/11/2 0.5뽀</summary>
 <div markdown="1">
@@ -178,6 +221,36 @@
 
 ### [Select](Select)
 
+<details>
+<summary><a href="">상위 n개 레코드</a> - 23/11/03 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>LIMIT, 서브 쿼리.</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>LIMIT 이용법</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>LIMIT 맨 아래에 보고 싶은 거 거르기<ul>
+<li>order by와 함께 사용 시 top만 확인 가능</li>
+</ul>
+</li>
+<li>서브 쿼리로 min 선택해서 min값과 같은 datetime 선택<ul>
+<li>min 선택 시 해당 컬럼의 data 값 한 개만 들고 옴.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>정빈님과 총미님과 풀었다~~! 서브 쿼리를 좀 더 연습해야겠다.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="Select/MemberListBornInMarch.sql"> 3월에 태어난 여성 회원 목록 출력하기</a> - 23/11/02 0.3뽀</summary>

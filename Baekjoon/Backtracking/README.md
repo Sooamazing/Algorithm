@@ -8,42 +8,54 @@
 <li>공개한 1등 기록: </li>
 <li>추정 시간 복잡도: </li>
 <li>문제 핵심</li>
-<ul>
-    <li></li>    
-    <li></li>  
-</ul>
 <li>어려웠던 부분 해결</li>
-<ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-</ul>
 <li>순위 코드 분석 후 배운 점</li>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
 <li>보충이 필요한 지식</li>
-<ul>
-    <li></li>
-    <li></li>
-</ul>
 <li>~칭찬~</li>
-<ul>
-<li></li>
-<ul><li></li></ul>
-</ul>
 </ul>
 </div>
 </details>
 
 -----
+
+<details>
+<summary>(Hint*2) N과 M (9) - 23/11/4 3.5뽀 - 21372KB 200ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 19580KB 172ms </li>
+<li>문제 핵심<ul>
+<li>다른 depth에서 선택 시 같은 idx 중복 비허용- visited</li>
+<li>같은 depth 내 동일 숫자 중복 비허용</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>depth 별로 중복 처리를 다르게 하는 게 어려웠음.</li>
+<li>같은 depth에서 확인할 경우, 해당 idx에서 사용되어야 하기 때문에 이전 idx를 방문한 경우만 continue (이전과 비교하면 이전은 무조건 방문처리해서 이전에 사용했는지를 확인해야 함, 안 그러면 지금 사용해야 하는데 continue 처리됨)</li>
+<li><a href="https://www.acmicpc.net/board/view/102625">참고한 질문 게시글 답변</a></li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>dfs 내 before 변수 사용해 조건문 축약</li>
+<li>저장 시 sb.setCharAt(), sb.delete() 사용</li>
+<li>st.charAt()-&#39;0&#39;으로 parseInt하지 않고 저장</li>
+<li>sb에 저장 혹은 LinkedHashSet에 저장하면서 해당 수열 중복 거르기</li>
+<li>dfs 후 뒤 idx 값이 현재 idx의 값과 같으면 달라질 때까지 i++ 진행</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>퀵소트 구현</li>
+<li>StringBuilder 메서드 이용하는 법</li>
+<li>StringTokenizer 메서드 이용법</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>진짜 머리 아프고 하고 싶지 않았는데... 끝까지 풀기 위해 노력했다는 점....~! 그리고 열심히 분석했다!!!! </li>
+<li>N과 M 우습게 봤는데... 이제 어려워지나 보다.... </li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary>N과 M (8) - 23년 10월 28일 0.5뽀 - 16480KB 152ms 2등!! </summary>
