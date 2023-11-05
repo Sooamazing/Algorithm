@@ -16,11 +16,18 @@
 - [투 포인터 문제](Baekjoon/TwoPointers)
 - [구현](Baekjoon/Implement)
 - [자료 구조](Baekjoon/DataStructure)
+- [정렬](Baekjoon/Sort)
 
 ## 프로그래머스
 ### PCCP 모의고사
 - [PCCP - 1](Programmers/PCCP1)
+- [PCCP - 2](Programmers/PCCP2)
+### 카테고리
+- [BFS, DFS](Programmers/BFSDFS)
 ### SQL - MySQL
+- [SQL - GROUP BY](Programmers/SQL/GROUPBY)
+- [SQL - IS NULL](Programmers/SQL/ISNULL)
+- [SQL - JOIN](Programmers/SQL/JOIN)
 - [SQL - Select](Programmers/SQL/Select)
 
 ## 각 폴더 내 README 구조
@@ -34,6 +41,7 @@
 ----------
 
 - lastUpdate: 23/10/31
+-  Update: 23/11/5 백준 정렬 폴더 추가 및 프로그래머스 BFSDFS, SQL - GROUP BY, ISNULL, JOIN 추가
 -  Update: 23/10/31 프로그래머스 SQL-MySQL 폴더 추가, SQL 시작
 -  Update: 23/10/29 백준 자료 구조 폴더 추가
 -  Update: 23/10/25 프로그래머스 폴더 추가 및 백준 폴더 분리

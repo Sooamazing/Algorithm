@@ -38,6 +38,23 @@
 ### [Group By](GROUPBY)
 
 <details>
+<summary><a href="GROUPBY/TheTotalNumberOfAppointmentsPerDepartment.sql">진료과별 총 예약 횟수 출력하기</a> - 23/11/4 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>월로 조회 후 진료과코드로 묶어 count하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>별칭에 “” 안 붙여도 됨.</li>
+<li>ORDER BY 에 별칭 사용 가능</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary><a href="GROUPBY/TotalTransactionAmountMeetsTheCondition.sql"> 조건에 맞는 사용자와 총 거래금액 조회하기</a> - 23/11/2 0.5뽀 </summary>
 <div markdown="1">
 <ul>
@@ -128,6 +145,17 @@
 
 ### [Join](JOIN)
 
+<details>
+<summary><a href="JOIN/Long-termAnimal1.sql">오랜 기간 보호한 동물(1)</a> - 23/11/4 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>nullable로 조건 찾기, left join</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="JOIN/ThereWasButThereWasNot.sql">있었는데요 없었습니다</a> - 23/11/3 1뽀</summary>
@@ -220,6 +248,29 @@
 </details>
 
 ### [Select](Select)
+
+<details>
+<summary><a href="Select/ConsolidateOfflineAndOnlineSalesData.sql">오프라인/온라인 판매 데이터 통합하기</a> - 23/11/4 2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>테이블 합치고, 없는 값 null 처리</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>union 시 order by만 하나, 다른 where 등은 각각 처리.</li>
+<li>union 은 중복 제거, union all은 중복 포함</li>
+<li>궁금한 / 보충이 필요한 부분</li>
+<li>full outer join은 이건 언제 쓰지?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>정빈님이 union 알려주셨다!!!! union, union all의 차이점과 order by는 맨 마지막 한 번만 쓴다고 공부한 게 어렴풋 기억나서 재미있었다.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="">상위 n개 레코드</a> - 23/11/03 1뽀</summary>
