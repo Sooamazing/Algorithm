@@ -29,6 +29,7 @@
 - [SQL - IS NULL](Programmers/SQL/ISNULL)
 - [SQL - JOIN](Programmers/SQL/JOIN)
 - [SQL - Select](Programmers/SQL/Select)
+- [SQL - String, Date](Programmers/SQL/StringDate)
 
 ## 각 폴더 내 README 구조
 
@@ -41,6 +42,7 @@
 ----------
 
 - lastUpdate: 23/10/31
+-  Update: 23/11/6 프로그래머스 SQL - String, Date 추가
 -  Update: 23/11/5 백준 정렬 폴더 추가 및 프로그래머스 BFSDFS, SQL - GROUP BY, ISNULL, JOIN 추가
 -  Update: 23/10/31 프로그래머스 SQL-MySQL 폴더 추가, SQL 시작
 -  Update: 23/10/29 백준 자료 구조 폴더 추가

@@ -14,6 +14,53 @@
 </details>
 
 -----
+### [String, Date](StringDate)
+
+<details>
+<summary><a href="StringDate/UserInformation.sql">조건에 맞는 사용자 정보 조회하기 </a>- 23/11/5 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>문자를 적절히 더해 주소 나타내기</li>
+<li>문자를 적절히 나눠 핸드폰 번호 나타내기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>CONCAT, SUBSTRING</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>정규 표현식</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>총미님, 정빈님, 지원님이랑 같이 했다! 즐겁다 ㅎㅅㅎ</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><a href="StringDate/TheStatusOfUsedTransactions.sql">조건에 부합하는 중고거래 상태 조회하기</a> - 23/11/5 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>특정 문자를 다른 문자로 변환</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>case when </li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>replace</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 ### [Is Null](ISNULL)
 
@@ -36,6 +83,28 @@
 </details>
 
 ### [Group By](GROUPBY)
+
+<details>
+<summary><a href="GROUPBY/CarsWithSpecificOptionsByCarType.sql">자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기</a> - 23/11/5 0.3뽀</summary>
+<div markdown="1">
+</div>
+<ul>
+<li>문제 핵심<ul>
+<li>특정 문자 포함 여부 확인하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>LIKE</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>LIKE, CONCAT</li>
+<li>문제 예시 파악 후 조건 줄이기</li>
+</ul>
+</li>
+</ul>
+</details>
+
 
 <details>
 <summary><a href="GROUPBY/TheTotalNumberOfAppointmentsPerDepartment.sql">진료과별 총 예약 횟수 출력하기</a> - 23/11/4 1뽀</summary>

@@ -8,42 +8,50 @@
 <li>공개한 1등 기록: </li>
 <li>추정 시간 복잡도: </li>
 <li>문제 핵심</li>
-<ul>
-    <li></li>    
-    <li></li>  
-</ul>
 <li>어려웠던 부분 해결</li>
-<ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-</ul>
 <li>순위 코드 분석 후 배운 점</li>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
 <li>보충이 필요한 지식</li>
-<ul>
-    <li></li>
-    <li></li>
-</ul>
 <li>~칭찬~</li>
-<ul>
-<li></li>
-<ul><li></li></ul>
-</ul>
 </ul>
 </div>
 </details>
 
 --------
+
+<details>
+<summary>(Hint) RGB거리 - 23/11/6 2뽀 - 14600KB 132ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14140KB 120ms</li>
+<li>문제 핵심<ul>
+<li>이전 조건에 따른 최솟값 구하기</li>
+<li>각 r,g,b 각각에서 시작해 겹치지 않게 min으로 dp 진행</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>백트래킹으로 시도했으나 풀리지 않아 dp 힌트 및 코드 확인..</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>입력 받을 때부터 dp 가능!</li>
+<li>red, green, blue 상수로 이용</li>
+<li>나머지 이용해 행 별로 메모이 제이션 이용 / 두 행으로 비교</li>
+<li>stream으로 min 출력</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>dp 공부</li>
+<li>메모이제이션 적절하게 활용하는 법</li>
+<li>백트래킹으로 푼다면?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>...... dp를 더 공부하자.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 
 <details>
