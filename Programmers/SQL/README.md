@@ -16,6 +16,26 @@
 -----
 ### [String, Date](StringDate)
 
+
+<details>
+<summary><a href="StringDate/AnimalWithAnElInItsName.sql.sql">이름에 el이 들어가는 동물 찾기 </a>- 23/11/7 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>문자열 포함 여부 확인하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>ike에 알파벳은 대소문자 구분 X</li>
+<li>order by도 대소문자 구분 X</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+
 <details>
 <summary><a href="StringDate/UserInformation.sql">조건에 맞는 사용자 정보 조회하기 </a>- 23/11/5 1뽀</summary>
 <div markdown="1">
@@ -40,6 +60,8 @@
 </ul>
 </div>
 </details>
+
+
 
 <details>
 <summary><a href="StringDate/TheStatusOfUsedTransactions.sql">조건에 부합하는 중고거래 상태 조회하기</a> - 23/11/5 1뽀</summary>
@@ -83,6 +105,102 @@
 </details>
 
 ### [Group By](GROUPBY)
+
+
+<details>
+<summary><a href="GROUPBY/CountingBookSalesByCategory.sql">카테고리 별 도서 판매량 집계하기</a> - 23/11/7 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>카테고리 별 도서 판매량을 합산하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>.</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>.</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>봉승님 정빈님이랑 지원님 &gt;&lt; 이랑 같이~.~</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary><a href="GROUPBY/DistinguishWhetherCarRentalIsAvailableRentalInTheCarRentalRecord.sql">자동차 대여 기록에서 대여중 / 대여 가능 여부 구분하기</a> - 23/11/7 2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>case로 조건 분기, case 내에서 걸러주기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>subquery를 case when in( ) 사용하기</li>
+<li>group by 후 select에서 group by 컬럼으로 이용하지 않으면 대표값으로 이용되는 점 주의!</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>between 포맷 통일되면 가능 ? dateformat은 가능</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+
+
+
+
+<details>
+<summary><a href="GROUPBY/theMostFavoriteRestaurantInformation.sql.sql.sql">즐겨찾기가 가장 많은 식당 정보 출력하기</a> - 23/11/6 2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>그룹 별 가장 많은 favorite 출력하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>WHERE IN 으로 서브 쿼리 사용법</li>
+<li>집계함수를 사용한 컬럼과 groupby 이용된 컬럼이 아닌 걸 출력하면, 연계된 결과가 아닌 각각 별개의 값이 출력됨.</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>where in, 서브쿼리 사용법</li>
+<li>FAVORITES이 중복인 경우 걸러주는 건?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>집계함수와 매칭하는 게 어려웠음.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+
+<details>
+<summary><a href="GROUPBY/TotalOrderOfIceCreamDividedByIngredients.sql.sql">성분으로 구분한 아이스크림 총 주문량</a> - 23/11/6 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>같은 성분 아이스크림 구하고 합계 구하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>inner join인 경우 where로 결합 가능</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="GROUPBY/CarsWithSpecificOptionsByCarType.sql">자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기</a> - 23/11/5 0.3뽀</summary>
@@ -317,6 +435,35 @@
 </details>
 
 ### [Select](Select)
+
+
+
+<details>
+<summary><a href="Select/ListOfRestaurantsLocatedInSeoul.sql">서울에 위치한 식당 목록 출력하기</a> - 23/11/6 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>조건으로 한 번 걸러주기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>WHERE 사용할 때도 어디 컬럼인지 표기해야 함.</li>
+<li>서브 쿼리 사용하지 않고, JOIN, WHERE로도 가능</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>WHERE (infos.REST_ID)</li>
+<li>LIKE ‘서울%’</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>봉승님, 정빈님, 지원님이랑 함께 풀었다&gt;&lt; ㅎㅎㅎ </li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary><a href="Select/ConsolidateOfflineAndOnlineSalesData.sql">오프라인/온라인 판매 데이터 통합하기</a> - 23/11/4 2뽀</summary>

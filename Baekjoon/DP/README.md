@@ -18,6 +18,76 @@
 
 --------
 
+
+<details>
+<summary>01타일 - 23/11/08 0.5뽀 - 22296KB 148ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14196KB 128ms</li>
+<li>문제 핵심<ul>
+<li>피보나치 수열</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>for 문의 종료 조건 수 +1로 배열 크기 설정해야 idx error X</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>저장하지 않고, a, b, result 변수만 업데이트, 1,2인 경우 따로 처리 필요.</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>이게 어떻게 가능하지?<ul>
+<li>짝수: dpn = (n / 2) <em> ((n / 2) + 2 </em> (n / 2 - 1)) % MOD; </li>
+<li>홀수: dpn = (((n + 1) / 2) <em> ((n + 1) / 2) % MOD + ((n - 1) / 2) </em> ((n - 1) / 2) % MOD) % MOD; </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>풀었던 문제랑 비슷한 유형 나오니까 슥삭..! 이래서….. 문제를 많이 풀어보는구나! 요즘 의기소침했는데, 뭔가….. 좀 자신감이 생기는 기분? ㅋㅋㅋ</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary>(Hint) Four Squares - 23/11/7 4뽀 - 14572KB 148ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14272KB 132ms</li>
+<li>문제 핵심<ul>
+<li>제곱수인 경우 dp[i - j * j]이 dp[0]으로 출력돼 dp[i]=1이 됨.</li>
+<li>j가 1부터 j*j&lt;=i(i와 같아지는 제곱수)까지 돎 =&gt; 이전 수까지 dp에 저장되어 있어서 저장된 배열로 이용 가능 <ul>
+<li>0부터 j * j &lt; i까지로 하면 j=0일 때 dp[i]에 저장된 수가 0이라 계속 0만 출력됨.</li>
+</ul>
+</li>
+<li>나머지수(=해당 수 - 제곱수)를 구하는 최소 수는 이미 dp에 있어서 어떤 제곱수를 뺀 나머지 수를 이용하는 게 더 최소를 보장하는지를 j for문에서 비교</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>dp 이해 -&gt; print로 확인</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>재귀로 dp 풀기</li>
+<li>각 for에서 1,2,3,4 return</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>예시에서 만족하는 제곱수를 뽑은 것처럼 만족하는 제곱수를 전부 출력하려면 어떤 조건을 추가하면 가능하지?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>dp를 더 열심히 풀자..!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 <details>
 <summary>(Hint) RGB거리 - 23/11/6 2뽀 - 14600KB 132ms</summary>
 <div markdown="1">
