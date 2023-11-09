@@ -22,6 +22,7 @@
 ### PCCP 모의고사
 - [PCCP - 1](Programmers/PCCP1)
 - [PCCP - 2](Programmers/PCCP2)
+- [PCCP - 기출 문제](Programmers/Previous)
 ### 카테고리
 - [BFS, DFS](Programmers/BFSDFS)
 ### SQL - MySQL
@@ -41,7 +42,8 @@
 
 ----------
 
-- lastUpdate: 23/10/31
+- lastUpdate: 23/11/9
+-  Update: 23/11/9 프로그래머스 기출 문제 추가
 -  Update: 23/11/6 프로그래머스 SQL - String, Date 추가
 -  Update: 23/11/5 백준 정렬 폴더 추가 및 프로그래머스 BFSDFS, SQL - GROUP BY, ISNULL, JOIN 추가
 -  Update: 23/10/31 프로그래머스 SQL-MySQL 폴더 추가, SQL 시작

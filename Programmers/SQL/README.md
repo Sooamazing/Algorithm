@@ -87,6 +87,51 @@
 ### [Is Null](ISNULL)
 
 <details>
+<summary><a href="ISNULL/MembersWithoutAgeInformation.sql">나이 정보가 없는 회원 수 구하기 </a> - 23/11/8 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>sum, count, null의 관계</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>count<ul>
+<li>null 포함해서 count함</li>
+<li>null인 경우 1 반환해 count도 가능</li>
+</ul>
+</li>
+<li>sum<ul>
+<li>sum( is null ) is null은 true/false 1/0 반환</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>집계함수 등에서 null의 처리</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>과거의 정빈님에게 여러 방식으로 푸는 법을 열심히 배웠다!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary><a href="ISNULL/IDOfTheAnimalWithAName.sql">이름이 있는 동물의 아이디 </a> - 23/11/8 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>NAME이 비어있지 않은 곳 출력하기</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary><a href="ISNULL/ProcessingNULL.sql">NULL 처리하기 </a> - 23/11/3 0.1뽀</summary>
 <div markdown="1">
 <ul>
@@ -331,6 +376,23 @@
 </details>
 
 ### [Join](JOIN)
+
+
+<details>
+<summary><a href="JOIN/AnimalNeuteredInAShelter.sql">보호소에서 중성화한 동물</a> - 23/11/8 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>LIKE와 NOT LIKE로 조건 확인하기</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>정빈님과 지원님과 &gt;&lt;</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="JOIN/Long-termAnimal1.sql">오랜 기간 보호한 동물(1)</a> - 23/11/4 0.3뽀</summary>
