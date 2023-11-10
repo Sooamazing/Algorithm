@@ -19,6 +19,43 @@
 --------
 
 <details>
+<summary>상자넣기 - 23/11/10 1.5뽀 - 14644KB 152ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14256KB 124ms</li>
+<li>문제 핵심<ul>
+<li>현재 순서보다 앞선 순서에서 작은 수를 찾고, 그 수에 저장된 (그 수보다 작은 수의 개수의 최댓값)이 가장 큰 수 +1</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>dp에 넣을 (가장 큰 dp 값 가진) 작은 수를 찾기 -&gt;  0~i까지 for를 돌리며 이전 값과 비교</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>이진 탐색 사용해 dp 배열에서 유의미한 가장 긴 부분 수열 길이 구하기</li>
+<li>D[j]&gt;=D[i] &amp;&amp; S[i]&gt;S[j] 로 하면 이전 dp[j]에서 가장 큰 값에 +1하게 됨.</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>LIS, <a href="https://bedamino.tistory.com/26">블로그 이진 탐색 사용 설명</a><ul>
+<li>이진 탐색에서 어떤 걸 구하고자 하는 건지 확인<ul>
+<li>low는 next와 같거나 가장 가까운 작은 수? high는 ?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>~칭찬~<ul>
+<li>그래도.. ㅎㅅㅎ 가장 긴 감소하는 수열…. 열심히 떠올려서 풀었다 뿌듯.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
 <summary>퇴사 - 23/11/9 3뽀 - 14236KB 132ms</summary>
 <div markdown="1">
 <ul>

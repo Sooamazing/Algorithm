@@ -17,6 +17,27 @@
 ### [String, Date](StringDate)
 
 
+
+<details>
+<summary><a href="StringDate/AverageCarRentalPeriod.sql">자동차 평균 대여 기간 구하기 </a>- 23/11/9 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>그룹 별 평균 기간 구하고, 조건 탐색</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>ROUND는 해당 자리까지만 보이게 반올림</li>
+<li>GROUP BY가 SELECT 보다 먼저 실행 되지만, SELECT의 alias를 사용할 수 있음. (DBMS가 알아서 해줌. mysql 기준)</li>
+<li>date - date = 그냥 20221010-20221001 = 9 integer 형으로 뺄셈됨 → DATEDIFF 사용</li>
+<li>기간 구할 때는 +1 → 정빈님이 질문 게시판에 팁 알려줌!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
 <details>
 <summary><a href="StringDate/AnimalWithAnElInItsName.sql.sql">이름에 el이 들어가는 동물 찾기 </a>- 23/11/7 0.2뽀</summary>
 <div markdown="1">
@@ -377,6 +398,30 @@
 
 ### [Join](JOIN)
 
+
+<details>
+<summary><a href="JOIN/IceCreamsWithLotsOfOrders.sql">주문량이 많은 아이스크림들 조회하기</a> - 23/11/9 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>공통 테이블로 만들고, 그룹화해서 통계 내기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>외래 키는 기본 키를 참조 → inner join으로 풀어도 됨.</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>from에서 서브쿼리 시에는 항상 별칭이 필요한 걸까?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>정빈님 지원님이랑&gt;&lt;~!~! 다른 문제 하나는 cte가 나와서 뒤로 미뤘다...~!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="JOIN/AnimalNeuteredInAShelter.sql">보호소에서 중성화한 동물</a> - 23/11/8 0.5뽀</summary>

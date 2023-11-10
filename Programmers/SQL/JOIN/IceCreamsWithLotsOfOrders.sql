@@ -1,0 +1,11 @@
+-- 코드를 입력하세요
+SELECT alls.FLAVOR
+FROM (
+    SELECT *
+    FROM FIRST_HALF half
+    UNION ALL
+    SELECT *
+    FROM JULY) as alls
+GROUP BY alls.FLAVOR
+ORDER BY SUM(TOTAL_ORDER) DESC
+LIMIT 3
