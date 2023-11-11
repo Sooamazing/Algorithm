@@ -172,6 +172,22 @@
 
 ### [Group By](GROUPBY)
 
+<details>
+<summary><a href="GROUPBY/SalesByCategoryByAuthor.sql">저자 별 카테고리 별 매출액 집계하기</a> - 23/11/10 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>세 개의 테이블 JOIN 후 총액 구하기</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>영민님, 봉승님, 정빈님, 지원님 &gt;&lt;~! ㅎㅎㅎ 슥삭슥삭 풀었다~!~!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary><a href="GROUPBY/CountingBookSalesByCategory.sql">카테고리 별 도서 판매량 집계하기</a> - 23/11/7 0.5뽀</summary>
@@ -218,10 +234,6 @@
 </ul>
 </div>
 </details>
-
-
-
-
 
 
 <details>
@@ -398,6 +410,18 @@
 
 ### [Join](JOIN)
 
+
+<details>
+<summary><a href="JOIN/TotalSalesOfFoodProductsInMay.sql">5월 식품들의 총매출 조회하기</a> - 23/11/10 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>개수*가격으로 총 금액 구하기</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="JOIN/IceCreamsWithLotsOfOrders.sql">주문량이 많은 아이스크림들 조회하기</a> - 23/11/9 1뽀</summary>

@@ -2,7 +2,7 @@
 ## Baekjoon.DP 문제
 
 <details>
-<summary>문제 이름 - 날짜 0뽀 - 성능</summary>
+<summary><a href="">문제 이름</a> - 날짜 0뽀 - 성능</summary>
 <div markdown="1">
 <ul>
 <li>공개한 1등 기록: </li>
@@ -11,12 +11,58 @@
 <li>어려웠던 부분 해결</li>
 <li>순위 코드 분석 후 배운 점</li>
 <li>보충이 필요한 지식</li>
-<li>~칭찬~</li>
+<li>하고 싶은 말</li>
+<li><a href="">노션 링크</a></li>
 </ul>
 </div>
 </details>
 
 --------
+
+<details>
+<summary>(Hint) <a href="TheEasyNumberOfStairs.java">쉬운 계단 수</a> - 23/11/11 3.5뽀 - 17732KB 212ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14148KB 120ms</li>
+<li>문제 핵심<ul>
+<li>이전 수에서 가지치기를 어떻게 해서 현재 수로 넘어오는지 구하고, 전체 수 더해주기.</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>두 번째까지만 세어 보고, 0, 9인 경우에 대해 납작하게 (dp[i - 1] * 2 - 1) 이렇게만 생각함. -&gt; <a href="https://cotak.tistory.com/12">블로그 참고</a></li>
+<li>arr 정답 배열에 담을 때 += 사용해 자료형 범위 넘어가며 틀림.</li>
+<li>블로그에서 이전 수에서 현재 수로 넘어올 때 선 그은 걸 보고 관계를 이렇게 맺어서 해당 수를 모두 더하면 되는 구나! -&gt; 0~9까지 하드 코딩<ul>
+<li>0에서 가지치기가 되는 건지 헷갈려서 한 번 더 틀리고, 맨 처음만 안 되는 걸 다시 확인함.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>for 내에서 if로 0,9 거르고, 마지막 dp만 sum 구해서 출력</li>
+<li>Arrays.toString 사용해서 print하면 배열 내 요소 출력</li>
+<li>0일때, 9일때를 나눠서 for문 내 if 두 개로 각 j-1, j+1인 경우를 한 번에 처리 가능</li>
+<li>for(j = 0; j++ &lt; 10;) 사용</li>
+<li>N+2하는 것처럼 앞 뒤에 공간 주고, 처음부터 끝까지 같은 점화식 사용</li>
+<li>dp 전체 배열 X, 이전과 이후 저장하는 배열만 생성해 사용</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>mod 계산에 대해 추후 공부해 보기</li>
+<li>int, long 최대 허용치 외우기…</li>
+<li>topdwon, bottomup 구현</li>
+<li>dp 내의 배열 숫자가 커질수록 내가 생각한 양상이 아니었음… 잘 생각해 보기.</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>11/4에 못 풀고, 오늘 도전, 힌트를 보고 풀어냈다.</li>
+<li>좀 이해 못한 것도 있지만, 그래도 오랜만에 다른 사람 코드에서 재밌는 부분을 찾았다 ㅎㅅㅎ~!</li>
+<li>블로그 글처럼.. 생각하는 게 dp 핵심같은 기분!</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_10844-c3b16416d8b245c095040120c0dad41b?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary>상자넣기 - 23/11/10 1.5뽀 - 14644KB 152ms</summary>

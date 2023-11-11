@@ -7,8 +7,13 @@
     - Online 편집기를 사용하며 다져진 실력을 뽐내 보자!
 - 알아 보기 쉽게 코드 작성하기!
 
-# 각 폴더 README 이동 링크
+# 각 폴더 README, 노션 이동 링크
+- [백준 문제 정리 노션](https://hannanana.notion.site/9943ac1e094d47a3a00f97e949dd9fd8?v=f84c99eb37a047eba424869e6525cf0d&pvs=4)
+- [프로그래머스 문제 정리 노션](https://hannanana.notion.site/e625c17bc0a143f7baf1158549ba3bbc?v=11b851803152411c81a05000cb30483b&pvs=4) 
+- [프로그래머스 SQL 정리 노션](https://hannanana.notion.site/72495434e6bf48dc8d7447e0f7912dee?v=f90ccc25674e4c5a9759da3eb361a636&pvs=4)
+
 ## 백준
+
 - [DP 문제](Baekjoon/DP)
 - [BFS, DFS 문제](Baekjoon/BFSDFS)
 - [Backtracking 문제](Baekjoon/Backtracking)
@@ -26,23 +31,24 @@
 ### 카테고리
 - [BFS, DFS](Programmers/BFSDFS)
 ### SQL - MySQL
-- [SQL - GROUP BY](Programmers/SQL/GROUPBY)
-- [SQL - IS NULL](Programmers/SQL/ISNULL)
-- [SQL - JOIN](Programmers/SQL/JOIN)
-- [SQL - Select](Programmers/SQL/Select)
-- [SQL - String, Date](Programmers/SQL/StringDate)
+- [SQL - README 통합](Programmers/SQL)
 
-## 각 폴더 내 README 구조
+## 백준 폴더 내 문제 기록 내용 
+- Last Update.23/11/11
+- 문제(해당 코드 링크)
+  - 공개한 1등 기록:
+  - 문제 핵심
+  - 어려웠던 부분 해결
+  - 순위 코드 분석 후 배운 점
+  - 보충이 필요한 지식
+  - 하고 싶은 말
+  - 노션 링크 (틀린 코드 및 다른 사람 코드 모음 포함)
 
-- 문제
-    - 핵심
-    - 어려웠던 부분 해결
-    - 순위 코드 분석 후 배운 점
-    - 보충 필요한 지식
 
 ----------
 
-- lastUpdate: 23/11/9
+- lastUpdate: 23/11/11
+-  Update: 23/11/11 백준, 프로그래머스 통 노션 링크 추가, 각 문제 기록 해당 코드 링크 및 노션 추가, 칭찬 대신 하고 싶은 말로 수정
 -  Update: 23/11/9 프로그래머스 기출 문제 추가
 -  Update: 23/11/6 프로그래머스 SQL - String, Date 추가
 -  Update: 23/11/5 백준 정렬 폴더 추가 및 프로그래머스 BFSDFS, SQL - GROUP BY, ISNULL, JOIN 추가

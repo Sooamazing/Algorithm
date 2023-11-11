@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT author.AUTHOR_ID, author.AUTHOR_NAME, book.CATEGORY, sum(book.PRICE*sales.SALES) as TOTAL_SALES
+FROM BOOK book JOIN AUTHOR author ON book.AUTHOR_ID = author.AUTHOR_ID
+JOIN BOOK_SALES sales ON book.BOOK_ID = sales.BOOK_ID
+WHERE sales.SALES_DATE LIKE '2022-01%'
+GROUP BY book.AUTHOR_ID, book.CATEGORY
+ORDER BY author.AUTHOR_ID, book.CATEGORY DESC
