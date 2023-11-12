@@ -20,6 +20,45 @@
 --------
 
 <details>
+<summary><a href="PinaryNumber.java">이친수</a> - 23/11/12 0.5뽀 - 14216KB 124ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14124KB 120ms</li>
+<li>문제 핵심<ul>
+<li>이전 digit에서 가능한 0, 1 개수에 따라 좌우됨<ul>
+<li>0인 경우 1, 0 둘 다 사용 가능</li>
+<li>1인 경우 이후엔 0만 올 수 있음.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>long 판별이 어렵다... 어떻게 long인 걸 딱 알지? -&gt; 우선 바로 90 찍어보고 범위 벗어난 것  확인 후 수정</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>피보나치….. 01타일과 동일한.. 문제...</li>
+<li>D[i]=(D[i-1]-count)*2+count; </li>
+<li>t, o. l 변수 세 개로 해결</li>
+<li><a href="https://m.blog.naver.com/occidere/220788046159">피보나치 블로그 설명</a></li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>static 변수, 메서드를 사용하는 것과 main 내에서 하는 . 게차이가 나나?</li>
+<li>call by value</li>
+<li><a href="https://www.acmicpc.net/board/view/905">변수의 지역변수와 전역변수의 시간차이에 대해서..</a> - 캐시 힛 등</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>바로 피보나치인 걸 인식하지 못해서 자료형이 어려웠지만, 그래도 바로 적절하게 출력해 보고 알아챌 정도로는 성장한 거 같아서 기쁘다^_^~!</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_2193-d85de49c27c5487a852b65dae2eb3f9a?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary>(Hint) <a href="TheEasyNumberOfStairs.java">쉬운 계단 수</a> - 23/11/11 3.5뽀 - 17732KB 212ms</summary>
 <div markdown="1">
 <ul>

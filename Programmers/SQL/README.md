@@ -2,7 +2,7 @@
 ## SQL 문제 - MySQL 
 
 <details>
-<summary><a href="">문제 이름 - 날짜 0뽀</a></summary>
+<summary><a href="">문제 이름</a> - 날짜 0뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심</li>
@@ -16,7 +16,27 @@
 -----
 ### [String, Date](StringDate)
 
-
+<details>
+<summary><a href="StringDate/AttachmentOfTheUsedTransactionBoardWithTheHighestNumberOfViews.sql">조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기</a> - 23/11/11 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>최대 조회수를 구하고, 해당하는 파일 명 concat으로 전부 추출하기 </li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>GROUP BY board.BOARD_ID 해서 가장 위 결과 1개만 추출됨.</li>
+<li>IN/ANY/ALL 서브 쿼리에서는 LIMIT 사용 불가</li>
+<li>LIMIT 1으로 한 개 행만 출력되면 = 으로 사용 가능</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>봉승님과 지원님과 함께~! 질문 게시판 보고 = 인식.. 이전에도 썼는데, IN 알게 되고 여기에만 꽂혀서 잊고 있었다... 새로 배운 걸 시험해 본다고 이전 방식을 잊지는 말아야지.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="StringDate/AverageCarRentalPeriod.sql">자동차 평균 대여 기간 구하기 </a>- 23/11/9 1뽀</summary>
