@@ -19,6 +19,50 @@
 
 --------
 
+
+<details>
+<summary>(Hint) <a href="MinkyunsRuse.java">민균이의 계략</a> - 23/11/13 3뽀 - 15128KB 148ms</summary>
+<div markdown="1">
+<ul>
+<li>공개한 1등 기록: 14252KB 128ms</li>
+<li>문제 핵심<ul>
+<li>상자 넣기와 동일, LIS<ul>
+<li>이전 숫자와 현재 숫자를 비교하고, 이전 digit dp의 최댓값에 +1 </li>
+<li>이전에 조건문에서 최댓값 비교해 주는 방식 이용</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>조건문 비교 후 업데이트하는 값이 dp[i]여야 dp[i]에 최댓값이 입력됨 -&gt; 조건문 안에서 dp[i]가 아닌 temp로 업데이트 후 모든 for문을 돈 후 temp를 넣어주면, 당연히 마지막 조건을 통과했던 그 temp가 들어가서 이전 최댓값 dp[j]로 업데이트되는 걸 보장하지 못함.</li>
+<li>max에서 N 범위 설정</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>String[] temp = br.readLine().split(&quot; &quot;)로 입력 받기</li>
+<li>high idx 반환하는 binSearch, ptr 구현해 구하기</li>
+<li>for j=i 시작, 뒤랑 비교하며. dp[i] == dp[j], 뒤가 더 큰 경우, dp[j]++</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>dp[i] == dp[j] 이 조건이 필요한 이유</li>
+<li>Arrays.binarySearch(a, t)이 어떤 걸 반환하는지 확인하고, 이용해 보기</li>
+<li><a href="https://shoark7.github.io/programming/algorithm/3-LIS-algorithms">LIS의 길이를 구하는 3가지 알고리즘</a> → 이진  탐색으로 푸는 법 공부하기!</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>처음 dp의 최댓값이 아니었다는 걸 찾지 못해... 답 통과 후 지금 보니 오류가 보인다 허허...</li>
+<li>… 이진탐색으로 푸는 것도 배우고, 이렇게 푸는 것도 좀 더 익힐 필요성은 있는 듯.</li>
+<li>max도 그 안에서 효율적으로 구하는 걸 배우자.  </li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_11568-4ea7cfdd7d194ad29eff9e0ae96dabad?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
+
+
+
 <details>
 <summary><a href="PinaryNumber.java">이친수</a> - 23/11/12 0.5뽀 - 14216KB 124ms</summary>
 <div markdown="1">
