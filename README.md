@@ -8,6 +8,8 @@
 - 알아 보기 쉽게 코드 작성하기!
 
 # 각 폴더 README, 노션 이동 링크
+## 노션
+- [알고리즘 전체 확인 노션](https://hannanana.notion.site/c0611495ea944dafb9bc51d59afe2199?pvs=4)
 - [백준 문제 정리 노션](https://hannanana.notion.site/9943ac1e094d47a3a00f97e949dd9fd8?v=f84c99eb37a047eba424869e6525cf0d&pvs=4)
 - [프로그래머스 문제 정리 노션](https://hannanana.notion.site/e625c17bc0a143f7baf1158549ba3bbc?v=11b851803152411c81a05000cb30483b&pvs=4) 
 - [프로그래머스 SQL 정리 노션](https://hannanana.notion.site/72495434e6bf48dc8d7447e0f7912dee?v=f90ccc25674e4c5a9759da3eb361a636&pvs=4)
@@ -47,7 +49,8 @@
 
 ----------
 
-- lastUpdate: 23/11/11
+- lastUpdate: 23/11/13
+-  Update: 23/11/13 알고리즘 전체 노션 링크 추가
 -  Update: 23/11/11 백준, 프로그래머스 통 노션 링크 추가, 각 문제 기록 해당 코드 링크 및 노션 추가, 칭찬 대신 하고 싶은 말로 수정
 -  Update: 23/11/9 프로그래머스 기출 문제 추가
 -  Update: 23/11/6 프로그래머스 SQL - String, Date 추가

@@ -17,6 +17,79 @@
 ### [String, Date](StringDate)
 
 <details>
+<summary><a href="StringDate/ALong-TermAnimal2.sql">오랜 기간 보호한 동물(2)</a> - 23/11/13 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>날짜 계산 후 정렬해 상위 2개만 출력하기</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>날짜 계산할 때는 datediff 사용하기!</li>
+<li>inner join을 해도 어차피 out에 있는 것만 남아서 상관 없음.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><a href="StringDate/LucyAndElla.sql">루시와 엘라 찾기</a> - 23/11/13 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>이름 리스트와 같은 이름 가진 이 출력하기</li>
+<li>IN ( ) 내에 이름 넣고 찾기</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary><a href="StringDate/AListOfCarsWithRentalRecords.sql">대여 기록이 존재하는 자동차 리스트 구하기</a> - 23/11/12 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>조건에 맞게 출력하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>&quot;%Y-%m&quot;으로 월 거를 수도 있음.</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>적절한 서브쿼리와 조인</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><a href="StringDate/OrderStatusCategorizedByCondition.sql">조건별로 분류하여 주문상태 출력하기</a> - 23/11/12 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>조건에 따라 컬럼 값을 해당 단어로 정제해서 출력하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>case - end 가 한 쌍이라 () 안 묶어도 됨.</li>
+<li>when - then이 한쌍</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>IF 사용!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
 <summary><a href="StringDate/AttachmentOfTheUsedTransactionBoardWithTheHighestNumberOfViews.sql">조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기</a> - 23/11/11 1뽀</summary>
 <div markdown="1">
 <ul>
@@ -191,6 +264,32 @@
 </details>
 
 ### [Group By](GROUPBY)
+
+
+<details>
+<summary>(Hint) <a href="GROUPBY/NumberOfMembersPurchasingGoodsByYearMonthAndGender.sql">년, 월, 성별 별 상품 구매 회원 수 구하기</a> - 23/11/13 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>여러 조건으로 그룹화(NULL 제거) 후 다른 컬럼 수 집계해 출력하기</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>DISTINCT</li>
+<li>GROUP BY 했을 때의 결과를 잘 알아야 함.<ul>
+<li>group by한 컬럼과 count할 컬럼이 다른 경우 중복 여부!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>범석님, 봉승님, 영민님, 정빈님, 총미님이랑~!~!~! 지원님은 나중에 같이 푼댔다~! 야호~!</li>
+<li>distinct는 정말.. group by한 걸로 회원 수가 뽑힐 거라고 단단히 착각했지...</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="GROUPBY/SalesByCategoryByAuthor.sql">저자 별 카테고리 별 매출액 집계하기</a> - 23/11/10 0.5뽀</summary>
@@ -429,6 +528,49 @@
 </details>
 
 ### [Join](JOIN)
+
+
+<details>
+<summary>(Hint*3) <a href="JOIN/RentalCostsForCarsAvailableForASpecificPeriodOfTime.sql">특정 기간동안 대여 가능한 자동차들의 대여비용 구하기</a> - 23/11/12 3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>대여 기간 거르기: 11월 대여 제외<ul>
+<li>start, end를 11/1, 11/30 부등호로 표현하려 했으나 실패 -&gt; start와 end 사이에 11월이 포함되기만 하면 제외</li>
+</ul>
+</li>
+<li>할인된 금액 구하기: % 주의<ul>
+<li>(100-discount)% -&gt; %를 빼 먹어서 5억 출력..</li>
+</ul>
+</li>
+<li>Plan의 discount도 매핑 필요<ul>
+<li>discount 매핑이 되지 않아서 90일 이상의 할인율로 결합 -&gt; &#39;30일 이상&#39; 매핑 추가</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>JOIN ON의 ON에서 AND로 조건을 여러 개할 수 있음.</li>
+<li>서브쿼리에서 정제 후 올라 오면 메인 FROM에서 다 조인하지 않고, 필요한 것만 JOIN하는 데에 의의가 있는 듯.</li>
+<li>11월 대여 표현: END_DATE &gt;= &#39;2022-11-01&#39; AND START_DATE &lt; &#39;2022-12-01&#39;</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>GROUP BY 없이 HAVING 사용 시 동작 및 차이</li>
+<li>discount 매핑이 되지 않았는데 왜 90일 이상의 할인율로 결합된 걸까? 맨 윗 값도 아니고 맨 아래로?</li>
+<li>어떻게 쿼리를 작성하는 게 성능도 좋고 파악하기도 쉬울까.</li>
+<li>GROUP BY보다 DISTINCT 사용이 더 좋은가? 왜?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>봉승님, 영민님, 지원님이랑&gt;&lt;~! 와 진짜… JOIN… 무시했는데 이렇게.. 오래 걸리다니~!</li>
+<li>plan.DURATION_TYPE = &#39;30일 이상&#39; → 이것도.. 생각 못해서 서브쿼리로 생각하고 있던 걸 영민님이… 말해줬다 ㅎㅅㅎ…. ㅋㅋ….. 쉬운 방법을 꼭 먼저 생각해 보기!!!!! </li>
+<li>질문 게시판 보면서 다른 사람 쿼리를 보는 건 안 하고 있었는데, 역시… 해야 하나 생각했다</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 
 <details>
