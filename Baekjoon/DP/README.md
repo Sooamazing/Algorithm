@@ -19,6 +19,53 @@
 
 --------
 
+<details>
+<summary><a href="ContinuousSum.java">연속합</a> - 23/11/14 2.5뽀 - 23284KB 264ms</summary>
+<div markdown="1">
+</div>
+<ul>
+<li>공개한 1등 기록: 14908KB 152ms</li>
+<li>문제 핵심<ul>
+<li>연속된 숫자의 가장 큰 합 구하기 -&gt; 입력 받으며 sum, max 바로 구하기 -&gt; sum을 초기화하는 적절한 지점 찾기 -&gt; sum &lt; 0인 경우 0으로 초기화</li>
+</ul>
+</li>
+<li>어려웠던 부분 해결<ul>
+<li>음수가 허용되기 때문에, max 초기값은 min_value로 설정해야 함.</li>
+<li>배열 0부터 끝까지 쭉 돌면서 max 찾음. -&gt; 시간 초과</li>
+<li>left, right ptr 이용<ul>
+<li>right idx를 늘려가며 sum 구하고 max와 비교해 max 업데이트</li>
+<li>이때 sum &lt; 0 되면 left=right+1, right=+2, sum = left</li>
+</ul>
+</li>
+<li>풀다 보니 ptr 구현 X -&gt; 입력 받으면서 바로 cur 값을 sum에 더하며 0 미만, max 비교<ul>
+<li>sum=cur 시 음수 이후 양수부터 더하기 불가</li>
+<li>sum=0으로 초기화 후 max를 바로 비교해서 -1이 max으로 들어가지 않음.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>순위 코드 분석 후 배운 점<ul>
+<li>dp, sum&lt;0인 경우 그 다음에서 거르는 방식 → 이전 수까지의 합에 현재 숫자를 더한 값과 현재 숫자를 비교해 큰 값을 취하기</li>
+<li>read를 받아 변수에 저장하며 동시에 파라미터로 활용하기</li>
+<li>max 대신 sumList를 sort해서 마지막 idx 출력</li>
+</ul>
+</li>
+<li>보충이 필요한 지식<ul>
+<li>코드 로직은 크게 다르지 않은데, 시간과 메모리 차이는 어디서 나는 걸까? read를 직접 구현한 게 둘 다에 영향을 미치는 건가?</li>
+<li>max 를 직접 구현하는 게 Math.max를 쓰는 것보다 나은 건가? 아니면 등호의 차이가 큰 건가?<ul>
+<li>구현: return a &gt; b ? a : b; / max return a ≥ b ? a : b;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>생각보다 금세 풀어서 왕뿌듯..!!!! 그동안 dp 풀며…. 그래도 쪼끔은 성장했나보다!!!!!! 짱이다…!!!!!!! 문제 풀이도 조금 생각하니 떠올릴 수 있었고, 조건도 조금 미숙했지만, 반례 찾으면서 어떤 게 문제인지 확인 후 고쳤다,,,~!~!~!~!</li>
+<li>역시 다양한 상황을 가정할 수 있도록 좀 더 연마해 보기!</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_1912-35d6e87e139647f2a53eb3c55f36492c?pvs=4">노션 링크</a></li>
+</ul>
+</details>
 
 <details>
 <summary>(Hint) <a href="MinkyunsRuse.java">민균이의 계략</a> - 23/11/13 3뽀 - 15128KB 148ms</summary>
