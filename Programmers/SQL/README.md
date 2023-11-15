@@ -17,6 +17,22 @@
 ### [String, Date](StringDate)
 
 <details>
+<summary><a href="StringDate/NumberOfProductsByCategory.sql">카테고리 별 상품 개수 구하기</a> - 23/11/14 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>앞 두 글자로만 group해 count 및 order by 진행</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>LEFT는 왼쪽부터 SUBSTRNG 진행</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary><a href="StringDate/ALong-TermAnimal2.sql">오랜 기간 보호한 동물(2)</a> - 23/11/13 0.3뽀</summary>
 <div markdown="1">
 <ul>
@@ -265,6 +281,39 @@
 
 ### [Group By](GROUPBY)
 
+<details>
+<summary><a href="GROUPBY/AdoptionTime1.sql">입양 시각 구하기(1)</a> - 23/11/14 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>특정 범위 내의 시간에서 &#39;시&#39; 별로 count하기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>where, having 동작이 같다 ?<ul>
+<li>미리 거르는 거기 때문에 where 고려하는 게 낫다!</li>
+<li>count &gt; 2 같이 집계 함수 비교에는 having 쓰는 게 맞음.</li>
+</ul>
+</li>
+<li>HAVING h ?<ul>
+<li>HOUR 같은 함수 말고 순수한 컬럼명을 적어야 함.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>HAVING에 정말 함수로 계산하는 건 안 되는 건가?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>범석님, 봉승님, 영민님, 정빈님이랑 같이 풀었다!~!~! 지원님도 다 풀어내셨다~!~! 짱</li>
+<li>그래도 뭔가.. 반복해서 푸니까 생각이 하나 둘씩 나긴 한다!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 
 <details>
 <summary>(Hint) <a href="GROUPBY/NumberOfMembersPurchasingGoodsByYearMonthAndGender.sql">년, 월, 성별 별 상품 구매 회원 수 구하기</a> - 23/11/13 1뽀</summary>
@@ -356,7 +405,7 @@
 
 
 <details>
-<summary><a href="GROUPBY/theMostFavoriteRestaurantInformation.sql.sql.sql">즐겨찾기가 가장 많은 식당 정보 출력하기</a> - 23/11/6 2뽀</summary>
+<summary><a href="GROUPBY/theMostFavoriteRestaurantInformation.sql">즐겨찾기가 가장 많은 식당 정보 출력하기</a> - 23/11/6 2뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -384,7 +433,7 @@
 
 
 <details>
-<summary><a href="GROUPBY/TotalOrderOfIceCreamDividedByIngredients.sql.sql">성분으로 구분한 아이스크림 총 주문량</a> - 23/11/6 0.5뽀</summary>
+<summary><a href="GROUPBY/TotalOrderOfIceCreamDividedByIngredients.sql">성분으로 구분한 아이스크림 총 주문량</a> - 23/11/6 0.5뽀</summary>
 <div markdown="1">
 <ul>
 <li>문제 핵심<ul>
@@ -528,6 +577,22 @@
 </details>
 
 ### [Join](JOIN)
+
+<details>
+<summary><a href="JOIN/ListOfRestaurantsThatMeetTheCriteriaByGroup.sql">그룹별 조건에 맞는 식당 목록 출력하기</a> - 23/11/14 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>MAX COUNT인 속성에서 만족하는 인스턴스 전부 추출하기</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>Subquery에서 추출된 값이 1개인 경우  LIMIT 사용하고,  = 사용하기 (IN X)</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 
 <details>
