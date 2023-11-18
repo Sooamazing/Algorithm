@@ -3,20 +3,58 @@
 
 
 <details>
-<summary>문제 이름 - 날짜 0뽀 - 성능</summary>
+<summary><a href="">문제 이름</a> - 날짜 0뽀 - 성능</summary>
 <div markdown="1">
 <ul>
-<li>공개한 1등 기록: </li>
-<li>문제 핵심</li>
-<li>어려웠던 부분 해결</li>
-<li>순위 코드 분석 후 배운 점</li>
-<li>보충이 필요한 지식</li>
-<li>~칭찬~</li>
+<li>- [문제 링크]() </li>
+<li>- 공개한 1등 기록: </li>
+<li>- 추정 시간 복잡도: </li>
+<li>- 문제 핵심</li>
+<li>- 해결 과정</li>
+<li>- 다른 코드 감상 및 배울 점</li>
+<li>- 궁금하다! 더 공부하고 싶다!</li>
+<li>- 하고 싶은 말</li>
+<li>- [노션 링크]() - 다른 코드 및 틀린 코드 확인</li>
 </ul>
 </div>
 </details>
 
 ------------
+
+<details>
+<summary><a href="NumberOfConnectionElements.java">연결 요소의 개수</a> - 23/11/16 1.5뽀 - 113712KB 520ms</summary></summary>
+<div markdown="1">
+<ul>
+<li><a href="https://www.acmicpc.net/problem/11724">문제 링크</a></li>
+<li>공개한 1등 기록: 14088KB 120ms</li>
+<li>문제 핵심<ul>
+<li>연결된 곳을 다 탐색하고, 연결되지 않은 곳의 개수 찾기</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>연결 요소의 개수란 결국 이어지지 않은 걸 구해야 하기 때문에, bfs로 풂. - queue 연습 위해 bfs 선택</li>
+<li>i → j 갈 수 있으면 true인 2차원 배열, 노드 별 visited 확인하는 배열로 bfs 진행</li>
+<li>bfs 한 번 할 때마다 1 반환해 cnt에 더하고, cnt는 떨어진 연결 요소의 개수</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>union find 구현</li>
+<li>간선의 두 노드가 이미 같은 그룹이면 skip - 간선의 두 노드가 다른 그룹이며 합치고, 두 그룹이 합쳐져서 하나의 그룹이 되었기에 전체 그룹의 개수는 1감소</li>
+<li>List < List < Integer> &gt; 이용</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li><a href="https://gmlwjd9405.github.io/2018/08/31/algorithm-union-find.html">[알고리즘] Union-Find 알고리즘</a></li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>역시 그래프에 취약하다.. 좀 더 공부해야만…</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_11724-17716061f6f9466ea118c0a193c83511?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary>(Hint*5) 벽 부수고 이동하기 - 23/11/3 7뽀 - 224548KB 1512ms</summary>

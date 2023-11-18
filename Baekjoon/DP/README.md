@@ -21,6 +21,34 @@
 --------
 
 <details>
+<summary><a href="FibonacciFunction.java">피보나치 함수</a> - 23/11/17 0.5뽀 - 23284KB 264ms</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://www.acmicpc.net/problem/1003">문제 링크</a></li>
+<li>공개한 1등 기록: 13976KB 116ms</li>
+<li>문제 핵심<ul>
+<li>재귀에서 특정 조건문에 걸리는 횟수 찾기</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>결국 이전에 사용한 수를 사용하기 때문에 2차원 배열 dp에 각 digit 저장</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>0, 1 수도 피보나치!</li>
+<li>변수 세 개로 피보나치 구현</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li>피보나치 세계는 피보나치가 사는 건가..? </li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_1003-87159fac730e4f8ebde190f8deb20a4c?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary><a href="OneTwoThreeMore.java">1, 2, 3 더하기</a> - 23/11/15 0.7뽀 - 23284KB 264ms</summary>
 <div markdown="1">
 <ul>

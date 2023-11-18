@@ -16,6 +16,80 @@
 -----
 ### [String, Date](StringDate)
 
+
+<details>
+<summary><a href="StringDate/DistinguishBetweenLongAndShortTermRentalICarRentalRecords.sql">자동차 대여 기록에서 장기/단기 대여 구분하기</a> - 23/11/17 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>조건에 따라 문자열 치환</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><a href="StringDate/ListOfCarsWithSpecificOptions.sql">특정 옵션이 포함된 자동차 리스트 구하기</a> - 23/11/17 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>특정 문자가 포함된 row 구하기<ul>
+<li>LIKE 사용</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>(Hint*3) <a href="StringDate/RentalAmountByCarRentalRecord.sql">자동차 대여 기록 별 대여 금액 구하기</a> - 23/11/16 5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>해당하는 할인율에 맞춰 합계 구하기<ul>
+<li>컬럼에 정의되지 않은 할인율 처리 - IFNULL</li>
+<li>각 대여일 구하고, 해당하는 조건 선택한 테이블과 JOIN → 이때 INNER JOIN 시 모든 할인율이 카타시안 곱이 일어나기 때문에 OUTER JOIN 필요</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>JPA에서는 서브쿼리 있을 때, 포함해서 1개를 날리는 건가? 아니면 서브쿼리  + 메인 쿼리로 날리는 건가?</li>
+<li>CTE랑 서브쿼리랑 동작 및 성능 ?</li>
+<li>union all 의 동작방식? <ul>
+<li>CASE WHEN 사용시 컬럼 1개마다 한 번 실행됨으로 효율이 별로라서 UNION ALL이 더 빠르다고 함 → 정말인가? cache?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>db는  row를 최대한 다 거르고, select에서 해당하는 걸 선택하는 방식으로 생각해야 하는 것 같다.. row 별로 수행을 하는 거니까 rowNum? 해당 row에 원하는 값이 다 있으면 되는 게 핵심인 거겠지..? </li>
+<li>영민님 도움으로 풀었다… 나중에.. 꼭… ㅠㅠ 뚝딱뚞딱 혼자 … 풀 수 있게 되길.. ㅠㅅ. ….ㅠㅠㅠ 디비 …. 아직 디비 마인드가 장착이 되지 않았다…….</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><a href="StringDate/UncancelledMedicalAppointments.sql">취소되지 않은 진료 예약 조회하기</a> - 23/11/16 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>NULL 값 제외, 여러 조건들로 출력하기</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>컬럼명이 다를 수 있다는 것을… 생각하고, 확인하기..!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 <details>
 <summary><a href="StringDate/NumberOfProductsByCategory.sql">카테고리 별 상품 개수 구하기</a> - 23/11/14 0.2뽀</summary>
 <div markdown="1">
@@ -280,6 +354,87 @@
 </details>
 
 ### [Group By](GROUPBY)
+
+
+
+<details>
+<summary><a href="GROUPBY/AShoppingBasketOfMilkAndYogurt.sql">우유와 요거트가 담긴 장바구니</a> - 23/11/16 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>조건 모두가 포함하는 경우 찾기<ul>
+<li>DISTINCT, IN 사용</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><a href="GROUPBY/APlaceOwnedByAHeavyUser.sql">헤비 유저가 소유한 장소</a> - 23/11/15 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>2개 이상인 ID가 가진 모든 것 출력<ul>
+<li>같은 ID로 그룹화 후 2개 이상을 거르고, 해당 아이디에 해당하는 걸 전체 출력해야 하기 때문에 SUBQUERY 이용</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>GROUP BY와 집계 함수의 사용 → 어떤 식으로 출력될지 , 집계 함수 대상이 요구사항과 일치하는지 확인</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
+<summary>(Hint) <a href="GROUPBY/InformationOnTheMostExpensiveFoodsByFoodCategory.sql">식품분류별 가장 비싼 식품의 정보 조회하기</a> - 23/11/15 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>조건 리스트 내에 포함되어 있는(IN) 카테고리에서 가장 비싼 값(MAX) 찾기 → SUBQUERY로 MAX 및 해당 카테고리 거르기</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>OR 대신 IN 사용</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>from 에서 join하지 않고 단순히 , 로 묶는 건 지양하기.</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>(Hint) <a href="GROUPBY/TheNumberOfMonthlyRentalsForCarsWithAHighNumberOfRentals.sql">대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기</a> - 23/11/15 3.5뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>결과가 0이면 제외, 조건에 맞는 데이터에서 새로운 조건에 맞춰 반환<ul>
+<li>SUBQUERY로 걸러주고, HAVING에서 COUNT 수로 걸러주기</li>
+<li>SUBQUERY에서 특정 조건으로 걸러준 컬럼을 이용할 때, main에서도 해당 조건이 필요하면 다시 추가하기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>문제 파악을 잘하자! SUBQUERY에서 사용한 조건이어도 다시 사용해야 할 수 있다!</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>11/3 도전 실패, 11/15 풂!!! 야호~!</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="GROUPBY/AdoptionTime1.sql">입양 시각 구하기(1)</a> - 23/11/14 0.3뽀</summary>
@@ -578,6 +733,27 @@
 
 ### [Join](JOIN)
 
+
+<details>
+<summary><a href="JOIN/PercentageOfMembersWhoPurchasedTheProduct.sql">상품을 구매한 회원 비율 구하기</a> - 23/11/17 1뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>(중복 없이 해당하는 조건 / 전체) 계산</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>변수 사용</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>영민님이랑 &gt;&lt; 와 그래도… distinct 내가… !! 해냈다!!!! </li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
 <details>
 <summary><a href="JOIN/ListOfRestaurantsThatMeetTheCriteriaByGroup.sql">그룹별 조건에 맞는 식당 목록 출력하기</a> - 23/11/14 1뽀</summary>
 <div markdown="1">
@@ -795,6 +971,17 @@
 ### [Select](Select)
 
 
+<details>
+<summary><a href="Select/UsedTransactionCommentsThatMeetTheRequirements.sql">조건에 부합하는 중고거래 댓글 조회하기</a> - 23/11/16 0.4뽀</summary>
+<div markdown="1">
+<ul>
+<li>문제 핵심<ul>
+<li>특정 날짜 조건 찾기</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="Select/ListOfRestaurantsLocatedInSeoul.sql">서울에 위치한 식당 목록 출력하기</a> - 23/11/6 1뽀</summary>

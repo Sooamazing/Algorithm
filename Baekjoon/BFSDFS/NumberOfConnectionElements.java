@@ -1,5 +1,5 @@
 // https://www.acmicpc.net/problem/11724
-package Baekjoon;
+package Baekjoon.BFSDFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;

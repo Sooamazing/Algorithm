@@ -1,49 +1,58 @@
 # 기록
-## 투 포인터 문제
+## Backjoon.투 포인터 문제
 
 <details>
-<summary>문제 이름 - 날짜 0뽀 - 성능</summary>
+<summary><a href="">문제 이름</a> - 날짜 0뽀 - 성능</summary>
 <div markdown="1">
 <ul>
-<li>공개한 1등 기록: </li>
-<li>추정 시간 복잡도: </li>
-<li>문제 핵심</li>
-<ul>
-    <li></li>    
-    <li></li>  
-</ul>
-<li>어려웠던 부분 해결</li>
-<ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-</ul>
-<li>순위 코드 분석 후 배운 점</li>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-<li>보충이 필요한 지식</li>
-<ul>
-    <li></li>
-    <li></li>
-</ul>
-<li>~칭찬~</li>
-<ul>
-<li></li>
-<ul><li></li></ul>
-</ul>
+<li>- [문제 링크]() </li>
+<li>- 공개한 1등 기록: </li>
+<li>- 추정 시간 복잡도: </li>
+<li>- 문제 핵심</li>
+<li>- 해결 과정</li>
+<li>- 다른 코드 감상 및 배울 점</li>
+<li>- 궁금하다! 더 공부하고 싶다!</li>
+<li>- 하고 싶은 말</li>
+<li>- [노션 링크]() - 다른 코드 및 틀린 코드 확인</li>
 </ul>
 </div>
 </details>
 
 -----
+
+
+<details>
+<summary>(Hint*3) <a href="Budget.java">예산</a> - 23/11/18 3뽀 - 15228KB 164ms</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://www.acmicpc.net/problem/2512">문제 링크</a></li>
+<li>공개한 1등 기록: 14264KB 136ms</li>
+<li>문제 핵심<ul>
+<li>근접한 것 중 가장 큰 값 찾기</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>투 포인터 이용</li>
+<li>투포인터에서 r, l, m 중 어떤 걸 언제 출력해야 할지 감이 잡히지 않음. → 결국 정답 게시판 참고해 풂</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>left&lt;=right 동안 r 대신 l-1 출력도 가능</li>
+<li>left &gt; right면 max 결과에 저장, sum &gt; M일 때, max에 max 저장, sum ≤ M 이면 mid 저장,  mid - 1 / +1</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li>mid - 1 / +1 → 그냥 mid만 할 때랑 이렇게 -1, +1할 때는 어떤 상황 차이?</li>
+</ul>
+</li>
+<li>하고 싶은 말 <ul>
+<li>이분 탐색… 어렵다…ㅠㅅ ㅠ…</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_2512-4008c960a1b5443db7c34d240d31020e?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary>(Hint) 두 용액 - 23/10/20 3.5뽀 - 28672KB 400ms</summary>
