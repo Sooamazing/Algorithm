@@ -21,6 +21,43 @@
 
 ------------
 
+
+
+<details>
+<summary><a href="">쉬운 최단거리</a> - 23/11/22 1뽀 - 53648KB 652ms</summary>
+<div markdown="1">
+</div>
+<ul>
+<li><a href="https://www.acmicpc.net/problem/14940">문제 링크</a></li>
+<li>공개한 1등 기록: 31152KB 440ms</li>
+<li>문제 핵심<ul>
+<li>최단 거리는 BFS 사용, 목적지에서의 거리 출력는 visited 처리로 처리</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>순차적으로 가야 하기 때문에, 갔던 곳을 visited해야 재방문하지 않고, 시작점은 0 처리</li>
+<li>원래 갈 수 있는 땅인 부분 중에서 도달할 수 없는 위치는 sb로 출력 시 -1 처리</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>입력 시 시작을 0, 갈 수 있는 곳이면 -1로 저장하고, result 배열 내의 값을 아예 별개로 queue에 depth 자리를 할당해 0부터 시작해서 이전 depth 값 +1로 처리 → 어차피 해야 할 로직이고, que에 넣을 때 depth 한 자리 더 넣는 건 문제가 되지 않고, sb에 넣을 때가 아니라 result 자체를 바꿔줬다는 점에서 좀 더 나은 듯.</li>
+<li>String s = br.readLine(); map[i][j] = s.charAt(j * 2) - &#39;0&#39;; → StringTokenizer 대신 Stirng 그대로 이용</li>
+<li>Point 객체 사용!!! → Point[] arr = new Point[]; arr[i] = new Point(x, y);</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li>reader.skip(1), writer, switch 문 이용, 상수 이용(Integer.MIN_VALUE + 2 같이 이용 → 왜 이렇게 했을까?) </li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>우왕!!! 스터디에서 프로그래머스 말고! 이걸로 하는데! 아주! 좋다!!! 진짜 오랜만에 후딱 자신감 있게 풀었지~!~!</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_14940-361ef44885844a269ae9259ea2739733?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
+</details>
+
+
 <details>
 <summary><a href="NumberOfConnectionElements.java">연결 요소의 개수</a> - 23/11/16 1.5뽀 - 113712KB 520ms</summary></summary>
 <div markdown="1">
