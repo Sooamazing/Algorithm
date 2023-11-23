@@ -21,6 +21,46 @@
 
 -----
 
+<details>
+<summary><a href="SimilarWords.java">비슷한 단어_2179</a> - 23/11/23 3뽀 - 19672KB 1556ms</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://www.acmicpc.net/problem/2179">문제 링크</a></li>
+<li>공개한 1등 기록: 18528KB 220ms</li>
+<li>문제 핵심<ul>
+<li>DP - LIS -&gt; Nope<ul>
+<li>DP - LIS, 입력 받으며 이전 배열과 비교</li>
+<li>이때, 겹치는 값의 max 값 구하고, max면 저장 후 해당 값 출력</li>
+</ul>
+</li>
+<li>정렬 - Compare 사용 -&gt; 코드 공부 참고</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>메모리 초과, → 2차원 배열 arr 그냥 1차원 배열로 변경</li>
+<li>첫 번째 입력 받은 값으로 답 출력이 되지 않아 조건문 maxDigit &lt;= digit &amp;&amp; j &lt; firstIdx로 변경</li>
+<li>maxDigit == digit &amp;&amp; j &lt; firstIdx 와 maxDigit &lt; digit 따로 분리! → 정답!</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>String[] arr (입력 받는 배열), Word[] words(정렬, 이전 순서 기억하는 객체 배열), int[] lengthArr(arr 배열의 idx에 접두사 최대 길이 저장하는 배열) 선언해 적절히 저장해 조건 맞춰 출력</li>
+<li>Comparable 구현해 단어 순 정렬 → 두 문자의 접두사 길이 구하기 → 접두사 길이 최댓값 갱신 → 정렬 전 입력받은 단어의 위치에 접두가 길이값 갱신 및 저장 → max 길이 돌면서 출력</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li>maxDigit == digit &amp;&amp; j &lt; firstIdx , maxDigit &lt; digit , else(break)로 분리 → 왜 안 되지?</li>
+<li>HashMap으로 좀 더 효율적으로/간단하게 짜는 법!</li>
+<li>접두사 비교하는 거라 정렬인가? 정렬로 푸는 게 최적인 걸 어떻게 알 수 있지?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>최적 풀이로 풀지는 못했고, LIS라고 생각하고 이분탐색으로도 풀지는 못했지만(풀리는지도 모르겠지만) 그래도 풀어서 조금은 뿌듯</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_2179-ac2762c667764b5984f2e4b78d06364f?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary><a href="Statistics.java">통계학</a> - 23/11/19 4.5뽀 - 72804KB 804ms</summary>

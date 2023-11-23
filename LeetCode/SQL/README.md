@@ -18,6 +18,34 @@
 -----
 
 <details>
+<summary>E - <a href="1211_QueriesQualityAndPercentage.sql">Queries Quality and Percentage_1211</a> - 23/11/22 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://leetcode.com/problems/queries-quality-and-percentage/">문제 링크</a></li>
+<li>문제 핵심<ul>
+<li>평균 구하기<ul>
+<li>SUM에서 조건문으로 1, 0 반환해서 해당하는 조건 계산하기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>AVG 사용하기!!!!!!!! </li>
+<li>AVG 동작 과정?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>배운 걸 잘 활용하자! 다음에 AVG 활용해야지!</li>
+<li>와! 영민님 정빈님이랑 같이 풀었다! ㅎㅅㅎ 좋았다! 야호!</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/Queries-Quality-and-Percentage_1211-50151ce588cb40308375362494853db5?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
+
+
+<details>
 <summary>E - <a href="1633_PercentageOfUsersAttendedAContest.sql">Percentage of Users Attended a Contest_1633</a> - 23/11/21 2뽀</summary>
 <div markdown="1">
 <ul>
