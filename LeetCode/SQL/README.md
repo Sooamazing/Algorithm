@@ -17,6 +17,66 @@
 
 -----
 
+
+
+<details>
+<summary>E - <a href="619_Biggest%20Single%20Number.sql">Biggest Single Number_619</a> - 23/11/23 2뽀</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://leetcode.com/problems/biggest-single-number/">문제 링크</a></li>
+<li>문제 핵심<ul>
+<li>빈 필드 NULL로 처리하기<ul>
+<li>기본 출력할 null을 insert하는 것처럼 UNION ALL로 합치기</li>
+<li>좋은 풀이: 서브쿼리 이용해 추출한 테이블에서 max 함수 사용</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>max() 는 대상의 데이터가 없으면 null 값을 반환</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>왜 서브쿼리를 이용해야 하는 건지? 값을 선택하지 않은 걸 지칭하는 말은? 이것과 null에 대해서 모르겠음..!</li>
+<li>그냥 max할 때는 조건으로 걸러져 아무것도 출력되지 않는데, 그걸 서브쿼리로 이용하면 null이 출력된다니. WHY.</li>
+<li>In mysql the select statement return null by default so when you give that query inside an another select statement it display null when the subquery has no output </li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>어렵다… 이런 것들을 더 배우고 싶다. 허허. 영민님이랑 범석님이랑 열심히 생각했지만 어렵다~.~</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/Biggest-Single-Number_619-c1b291984e3844c18d2637ad6c8f0911?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary>M - <a href="">Consecutive Numbers_180</a> - 23/11/23 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://leetcode.com/problems/consecutive-numbers/">문제 링크</a></li>
+<li>문제 핵심<ul>
+<li>원하는 만큼 SELF JOIN / where in ()<ul>
+<li>id는 PK니까 +1씩 하면서 JOIN</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>with cte as (), lead() over()</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>영민님, 범석님이랑&gt;&lt; 후딱후딱~</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/Consecutive-Numbers_180-46c061cec0d7484aa882aebbed4f887b?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
+
+
 <details>
 <summary>E - <a href="1211_QueriesQualityAndPercentage.sql">Queries Quality and Percentage_1211</a> - 23/11/22 0.5뽀</summary>
 <div markdown="1">

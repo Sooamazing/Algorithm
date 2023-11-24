@@ -20,6 +20,40 @@
 
 -----
 
+<details>
+<summary><a href="Solution.java">용액_2467</a> - 23/11/24 1.5뽀 - 29116KB 364ms - 56등 ^_^..!</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://www.acmicpc.net/problem/2467">문제 링크</a></li>
+<li>공개한 1등 기록: 17088KB 196ms</li>
+<li>문제 핵심<ul>
+<li>투 포인터 이용해 조건에 맞는 수에 가까워질 때까지 찾기</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>0과 가까운 수 → abs 이용해서 비교, 가장 가까운 수면 저장해서 비교</li>
+<li>특성값(합) &lt; 0 면 무조건 left ++, 특성값(합) &gt; 0 면 무조건 right-- (음수 양수 혼합, 모두 음수, 모두 양수일 때도 동일)</li>
+<li>이진 탐색 → l, r 하나씩 위치 조정 필요해서 투포인터구나!</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>어차피 0 포함 0과 가까우면 저장해 주니, 0일 때 break하지 않고, 그냥 끝까지 진행</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li>이분 탐색으로 하는 법..!</li>
+<li>이분 탐색과 투포인터 구분?</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>두 용액이랑 똑같다 했더니… 정말…이었고, 심지어 두 용액이 더 어려운 문제였던 게 웃기다 ㅎㅎ…… 정렬하는지 아닌지의 차이긴 하지만…</li>
+<li>역시 투포인터 문제를 더 풀어봐야 할 듯. 아직 이진 탐색과 구분하는 법도 어렵다.</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/_2467-a3f8f90f3dfa4859989b642e7a85f8d8?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary>(Hint*3) <a href="Budget.java">예산</a> - 23/11/18 3뽀 - 15228KB 164ms</summary>
