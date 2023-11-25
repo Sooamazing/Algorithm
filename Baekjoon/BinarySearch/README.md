@@ -1,51 +1,32 @@
 # 기록
 
-## 이분 탐색 문제
+## Backjoon.이분 탐색 문제
 
 <details>
-<summary>문제 이름 - 날짜 0뽀 - 성능</summary>
+<summary><a href="">문제 이름</a> - 날짜 0뽀 - 성능</summary>
 <div markdown="1">
 <ul>
-<li>공개한 1등 기록: </li>
-<li>추정 시간 복잡도: </li>
-<li>문제 핵심</li>
-<ul>
-    <li></li>    
-    <li></li>  
-</ul>
-<li>어려웠던 부분 해결</li>
-<ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-    <li></li>
-    <ul>
-        <li></li>
-    </ul>
-</ul>
-<li>순위 코드 분석 후 배운 점</li>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-<li>보충이 필요한 지식</li>
-<ul>
-    <li></li>
-    <li></li>
-</ul>
-<li>~칭찬~</li>
-<ul>
-<li></li>
-<ul><li></li></ul>
-</ul>
+<li>- [문제 링크]() </li>
+<li>- 공개한 1등 기록: </li>
+<li>- 추정 시간 복잡도: </li>
+<li>- 문제 핵심</li>
+<li>- 해결 과정</li>
+<li>- 다른 코드 감상 및 배울 점</li>
+<li>- 궁금하다! 더 공부하고 싶다!</li>
+<li>- 하고 싶은 말</li>
+<li>- [노션 링크]() - 다른 코드 및 틀린 코드 확인</li>
 </ul>
 </div>
 </details>
 
------
+--------
 
+<details>
+<summary>(Hint) <a href="WriteTheIFSentence.java">IF문 좀 대신 써줘_19637</a> - 23/11/25 4뽀 - 60792KB 620ms</summary>
+<div markdown="1">
+
+</div>
+</details>
 
 <details>
 <summary>(Hint)랜선 자르기 - 23/10/27 2뽀 - 25268KB 216ms</summary>

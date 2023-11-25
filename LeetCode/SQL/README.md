@@ -20,6 +20,23 @@
 
 
 <details>
+<summary>E - <a href="2356_NumberOfUniqueSubjectsTaughtByEachTeacher.sql">Number of Unique Subjects Taught by Each Teacher_2356</a> - 23/11/25 0.3뽀</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/">문제 링크</a></li>
+<li>문제 핵심 <ul>
+<li>unique 개수 세기<ul>
+<li>unique는 DISTINCT!!!!! </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+
+
+<details>
 <summary>E - <a href="619_Biggest%20Single%20Number.sql">Biggest Single Number_619</a> - 23/11/23 2뽀</summary>
 <div markdown="1">
 <ul>
