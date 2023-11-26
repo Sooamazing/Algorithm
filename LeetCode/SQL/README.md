@@ -18,9 +18,40 @@
 -----
 
 
+<details>
+<summary>E - <a href="1141_UserActivityForThePast30DaysI.sql">User Activity for the Past 30 Days I_1141</a> - 23/11/25 1뽀</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://leetcode.com/problems/user-activity-for-the-past-30-days-i/">문제 링크</a></li>
+<li>문제 핵심<ul>
+<li>날짜를 기준으로 30일 전 구하고, unique한 값 추출하기<ul>
+<li>DATEDIFF 사용해 날짜 조건 계산</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>date_sub( ‘2019-07-27’ ,interval 30 day)</li>
+<li>BETWEEN DATE(&#39;2019-07-27&#39;) - INTERVAL 29 DAY AND DATE(&#39;2019-07-27&#39;)</li>
+<li>subdate(&#39;2019-07-27&#39;, 29)</li>
+</ul>
+</li>
+<li>궁금한 / 보충이 필요한 부분<ul>
+<li>date_sub, INTERVAL, subdate 사용법</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>.</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/User-Activity-for-the-Past-30-Days-I_1141-6b555941c2ea4bb79ed29053d720da48?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
+
 
 <details>
-<summary>E - <a href="2356_NumberOfUniqueSubjectsTaughtByEachTeacher.sql">Number of Unique Subjects Taught by Each Teacher_2356</a> - 23/11/25 0.3뽀</summary>
+<summary>E - <a href="2356_NumberOfUniqueSubjectsTaughtByEachTeacher.sql">Number of Unique Subjects Taught by Each Teacher_2356</a> - 23/11/24 0.3뽀</summary>
 <div markdown="1">
 <ul>
 <li><a href="https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/">문제 링크</a></li>

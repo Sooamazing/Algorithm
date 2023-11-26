@@ -22,6 +22,44 @@
 -----
 
 <details>
+<summary><a href="KCPC.java">KCPC_3758</a> - 23/11/26 2뽀 - 35636KB 352ms</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://www.acmicpc.net/problem/3758">문제 링크</a></li>
+<li>공개한 1등 기록: 34700KB 344ms</li>
+<li>문제 핵심<ul>
+<li>다양한 조건의 우선 순위를 매기고, 최종 순위 매기기 → 정렬</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>우선순위 큐가 log N 이니 전부 입력 및 계산 후 pq에 넣고, 해당 팀이 나올 때까지 poll하면서 등수 구하기</li>
+<li>입력 받을 때 total_sum 포함 모든 계산 완료</li>
+<li>배열 순서 헷갈리지 않게 상수 선언해 배열 idx 이용</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>비교할 점수, 횟수, 마지막 제출 시간을 저장하는 arr 자체에 comparator 구현 -&gt; 똑같이 입력 받을 때 하면서, prev, cur 점수 비교 시 total 바로 저장하면서 입력 받을 때 다 끝내고, sort만 할 수 있을 것 같음! 추후엔 비교할 것들을 한 번에 저장해서 정렬만 할 수 있도록 더 고민하기!</li>
+<li>sort하지 않고, 각 경우에 따라 cnt++해 주며 등수 구함.</li>
+<li>Map<Integer, int[]>, ketSet 사용해 sorted로 teamId 구함.</li>
+<li>class 선언, sum, solv 등 메서드 구현</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li>Arrays.sort, pq 등 sort를 구현한 것들의 시간 복잡도 비교 - <a href="https://d2.naver.com/helloworld/0315536">Tim sort에 대해 알아보자</a></li>
+<li>comparator 구현 시 return 1, -1 순서 확실히 공부</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>정렬 문제는 아직 이게 정렬이다! 라기보다는 다른 걸 고려해야 하는데, 와중에 정렬이 필요한 느낌이라 이게 어떤 문제인지를 더 고민하게 된다.</li>
+<li>그래도, 풀이들이 꽤나 비슷해서 기쁘고, 여러 방식이 재미있다.</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/KCPC_3758-8bced9fced924b7fa708b3aafdb21616?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary><a href="SimilarWords.java">비슷한 단어_2179</a> - 23/11/23 3뽀 - 19672KB 1556ms</summary>
 <div markdown="1">
 <ul>

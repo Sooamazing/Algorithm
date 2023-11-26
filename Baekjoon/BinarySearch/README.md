@@ -24,7 +24,63 @@
 <details>
 <summary>(Hint) <a href="WriteTheIFSentence.java">IF문 좀 대신 써줘_19637</a> - 23/11/25 4뽀 - 60792KB 620ms</summary>
 <div markdown="1">
-
+<ul>
+<li><a href="https://www.acmicpc.net/problem/19637">문제 링크</a></li>
+<li>공개한 1등 기록: 35752KB 420ms</li>
+<li>문제 핵심<ul>
+<li>정렬된 기준이 입력됐을 때, 해당 범위 조건에 맞는 값을 출력하기 → 정렬된 기준 내에서 범위 찾기는 이분 탐색으로 빠르게 탐색 가능</li>
+</ul>
+</li>
+<li>해결 과정<ul>
+<li>이미 정렬된 채 입력 받으니 문자열과 match하고, if 구하는 거라 판단해 map으로 구현 → 틀림</li>
+<li>반례 위해 질문 게시판 참고 → 이분탐색 키워드 확인 → Arrays.binarySearch 이용<ul>
+<li>그냥 sort 빼고 비내림차순이 그냥 중복 허용 오름차순이길래 LinkedHashMap 사용 </li>
+<li>Map에서 if 전부 돌리는 것도 어쨌든 시간 초과날 것 같아서 이진 탐색 Arrays.binarySearch 이용, keyIdx = (keyIdx + 1) * (-1);</li>
+<li>중복 제거 때문에 기존 arr에 null 이 들어가서, list에 먼저 담고 list size 맞춰 arr 생성 후 복붙 → 정답</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>다른 코드 감상 및 배울 점<ul>
+<li>Arrays.sort(titles, Comparator.comparing(Title::getPower)); 이용,  low = mid + 1, high = mid; low 반환</li>
+<li>그냥 while 에서 이진 탐색 진행</li>
+</ul>
+</li>
+<li>궁금하다! 더 공부하고 싶다!<ul>
+<li>map에 넣고 돌린 게 왜 틀린 건지 아직도 모르겠음… LinkedHashMap 사용해서 순서도 보장이 되는데, stream을 사용 시 순서 보장이 되지 않는 건지?</li>
+<li>rank[0]=&quot;BOUNDARY&quot;; → 왜 한 거지?</li>
+<li>map<ul>
+<li>map entrySet... 뭔지.. 공부가 필요해...</li>
+<li>String, int 섞이면 map이 맞나. 다른 방법? 그냥 배열 두 개 idx 로만?</li>
+<li>stream이 현재 map 순서를 보장하면서 list 만들어주는지! 확인 필요!</li>
+</ul>
+</li>
+<li><a href="https://codingdog.tistory.com/entry/java-arrays-binarysearch-함수를-알아봅시다">java arrays binarysearch 함수를 알아봅시다.</a><ul>
+<li>일치하는 숫자가 없는 경우: (해당 숫자가 들어가야 할 곳(정렬을 유지하기 위해 들어가야 할 순서, 작은 숫자와 큰 숫자 사이라서 큰 숫자의 idx) * (-1)) -1 반환</li>
+<li>lower_bound:<ul>
+<li>양수: 반환된 idx</li>
+<li>음수: (반환된 idx+1)*(-1)</li>
+</ul>
+</li>
+<li>upper_bound:<ul>
+<li>양수: 반환된 idx+1</li>
+<li>음수: (반환된 idx+1)*(-1)</li>
+</ul>
+</li>
+<li>key가 unique하지 않은 경우<ul>
+<li>(key, location)으로 만들고 binary_search 진행</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>이분 탐색인 걸 감을 못 잡겠다…</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/IF-_19637-e38736759df24253a43ac3b156cf7d8e?pvs=4">노션 링크</a> - 다른 코드 및 틀린 코드 확인</li>
+</ul>
 </div>
 </details>
 
