@@ -17,6 +17,27 @@
 
 -----
 
+<details>
+<summary>E - <a href="1978_EmployeesWhoseManagerLeftTheCompany.sql">Employees Whose Manager Left the Company_1978</a> - 23/11/27 0.5뽀</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://leetcode.com/problems/employees-whose-manager-left-the-company/">문제 링크</a></li>
+<li>문제 핵심<ul>
+<li>SELF JOIN으로 없는 것 찾기<ul>
+<li>없는 걸 찾아야 해서 NOT IN으로 확인</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>새로 알게된 것<ul>
+<li>not null 처리 추가</li>
+<li>JOIN으로 진행</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/Employees-Whose-Manager-Left-the-Company_1978-64ccb475c1a14724b348fcb23d56bdb1?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
 
 <details>
 <summary>E - <a href="1141_UserActivityForThePast30DaysI.sql">User Activity for the Past 30 Days I_1141</a> - 23/11/25 1뽀</summary>

@@ -25,6 +25,7 @@
 - [자료 구조](Baekjoon/DataStructure)
 - [정렬](Baekjoon/Sort)
 - [분할 정복](Baekjoon/DivideAndConquer)
+- [그래프](Baekjoon/Graph)- BFS DFS 외 탐색 방법
 
 ## 프로그래머스
 ### PCCP 모의고사
@@ -52,6 +53,7 @@
 ----------
 
 - lastUpdate: 23/11/21
+-  Update: 23/11/27 백준 그래프 폴더 추가 - BFS DFS 외 탐색 방법
 -  Update: 23/11/21 백준 분할 정복 폴더 추가
 -  Update: 23/11/19 LeetCode (SQL), CodingTest(Goorm) 폴더 추가
 -  Update: 23/11/15 문제 기록 내용에 문제 링크 추가(, + 노션 템플릿 변경), 어려웠던 점을 해결 과정으로(발상 포함하려고), 보충할 점을 궁금하다! 더 공부하고 싶다!로, 순위 코드 말고 다른 코드 감상 및 배울 점 변경
