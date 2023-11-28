@@ -18,6 +18,27 @@
 -----
 
 <details>
+<summary>E - <a href="596_ClassesMoreThan5Students.sql">Classes More Than 5 Students_596</a> - 23/11/27 0.2뽀</summary>
+<div markdown="1">
+<ul>
+<li><a href="https://leetcode.com/problems/classes-more-than-5-students/">문제 링크</a></li>
+<li>문제 핵심<ul>
+<li>5개 이상인 과목 구하기<ul>
+<li>GROUP BY, HAVING COUNT(*)&gt;=5 사용</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>하고 싶은 말<ul>
+<li>영민님이랑 풀어서 아주 좋았다&gt;&lt;~!~!~!</li>
+</ul>
+</li>
+<li><a href="https://hannanana.notion.site/Classes-More-Than-5-Students_596-8ec2cf5a66d44cb790639bef97ad3ec0?pvs=4">노션 링크</a></li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary>E - <a href="1978_EmployeesWhoseManagerLeftTheCompany.sql">Employees Whose Manager Left the Company_1978</a> - 23/11/27 0.5뽀</summary>
 <div markdown="1">
 <ul>
