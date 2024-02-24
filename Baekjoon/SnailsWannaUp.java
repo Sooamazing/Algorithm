@@ -23,4 +23,5 @@ public class SnailsWannaUp {
 		System.out.println(day);
 
 	}
+
 }
