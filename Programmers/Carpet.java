@@ -18,12 +18,13 @@ public class Carpet {
 				// yellow 세로 == square/i-2
 
 				int curYellow = (i - 2) * (square / i - 2);
-				int curBrown = i * (square / i) - curYellow;
+				// int curBrown = i * (square / i) - curYellow;
 
 				if (square % i == 0 // 한 변을 만족하는 나누어 떨어지는 수
 					// &&(square%(i-2))==0
 					&& curYellow == yellow // yellow 만족
-					&& (curYellow + curBrown) == square) { // 주어진 면적 만족
+					// && (curYellow + curBrown) == square // 주어진 면적 만족
+				) {
 					length = i;
 					break;
 				}
