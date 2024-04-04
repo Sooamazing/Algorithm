@@ -37,5 +37,29 @@ public class Carpet {
 
 		}
 
+		// 다른 풀이
+		// 24-04-04 20min
+		public int[] solution2(int brown, int yellow) {
+			int[] answer = new int[2];
+
+			int square = brown + yellow;
+			for (int i = 1; i <= yellow; i++) {
+
+				int a = i;
+				int b = yellow / i;
+
+				// yellow 면적의 한 변(약수)이고, 총 면적과 일치하면 정답
+				if (yellow % i == 0
+					&& (a + 2) * (b + 2) == square) {
+					answer = new int[] {b + 2, a + 2};
+					break;
+				}
+
+			}
+
+			return answer;
+
+		}
+
 	}
 }
