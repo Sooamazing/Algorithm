@@ -6,6 +6,23 @@ import java.util.Arrays;
 // https://school.programmers.co.kr/learn/courses/30/lessons/142085
 public class DefenseGame {
 
+	public static void main(String[] args) {
+		DefenseGame defenseGame = new DefenseGame();
+		int solution = defenseGame.solution(5, 2, new int[] {99, 1, 99}); // 3
+		int solution1 = defenseGame.solution(7, 1, new int[] {2, 1, 5, 1}); // 4
+		int solution2 = defenseGame.solution(7, 2, new int[] {2, 1, 99, 99}); // 4
+		int solution3 = defenseGame.solution(10, 1, new int[] {2, 2, 2, 2, 2, 10}); // 6
+		int solution4 = defenseGame.solution(10, 1, new int[] {2, 2, 2, 2, 10}); // 5 - 틀림
+		int solution5 = defenseGame.solution(3, 1, new int[] {3, 4}); // 2 - 틀림
+		System.out.println(solution);
+		System.out.println(solution1);
+		System.out.println(solution2);
+		System.out.println(solution3);
+		System.out.println(solution4);
+		System.out.println(solution5);
+
+	}
+
 	private static int round;
 	private static int[] enemies;
 	private static int curN;
