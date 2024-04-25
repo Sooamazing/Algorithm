@@ -11,12 +11,13 @@ public class PizzaSmall {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		int pizzaNum = Integer.parseInt(br.readLine());
-		int[] dp = new int[11];
+		System.out.println(pizzaNum * (pizzaNum - 1) / 2);
+		// int[] dp = new int[11];
 		// dp[2] = 1;
 		// for (int i = 3; i <= pizzaNum; i++) {
 		// 	dp[i] = i - 1 + dp[i - 1];
 		// }
-		System.out.print(dp[pizzaNum]);
+		// System.out.print(dp[pizzaNum]);
 
 	}
 }
