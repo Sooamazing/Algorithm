@@ -30,7 +30,7 @@ public class SelectionList {
 			tempSum = 0;
 			maxSum = 0;
 			positionArr = new boolean[11];
-			backtracking(0, 0);
+			backtracking(0);
 			sb.append(maxSum).append("\n");
 		}
 
@@ -40,25 +40,25 @@ public class SelectionList {
 	static int maxSum = 0;
 	static int tempSum = 0;
 
-	static void backtracking(int depth, int row) {
+	static void backtracking(int depth) {
 		if (depth == 11) {
 			maxSum = Math.max(maxSum, tempSum);
 			return;
 		}
 
-		for (int i = row; i < 11; i++) {
-			for (int j = 0; j < 11; j++) {
-				int curScore = arr[i][j];
-				if (curScore != 0 && !positionArr[j]) {
-					tempSum += curScore;
-					positionArr[j] = true;
-					backtracking(depth + 1, i + 1);
+		// for (int i = row; i < 11; i++) {
+		for (int j = 0; j < 11; j++) {
+			int curScore = arr[depth][j];
+			if (curScore != 0 && !positionArr[j]) {
+				tempSum += curScore;
+				positionArr[j] = true;
+				backtracking(depth + 1);
 
-					// 초기화해야 다음 for문에서 영향을 받지 않음.
-					tempSum -= curScore;
-					positionArr[j] = false;
-				}
+				// 초기화해야 다음 for문에서 영향을 받지 않음.
+				tempSum -= curScore;
+				positionArr[j] = false;
 			}
 		}
+		// }
 	}
 }
