@@ -21,30 +21,33 @@ public class Main
 			int result = 0;
 			// boolean isPrevOpen = false;
 			int length = str.length();
-			Stack<Character> stack = new Stack<>();
-			for(int i = 0 ; i <length ; i++){
-				stack.push(str.charAt(i));
-			}
+			// Stack<Character> stack = new Stack<>();
+			// for(int i = 0 ; i <length ; i++){
+			// 	stack.push(str.charAt(i));
+			// }
 
-			Stack<Character> rightStack = new Stack<>();
-			// char prevC = stack.pop();			
-			while(!stack.isEmpty()){
+			// Stack<Character> rightStack = new Stack<>();
+			// char prevC = stack.pop();	
+
+		int rightNum =0;
+			for(int i = length-1; i>=0; i--){
 				// charAt으로만 하는 방법 ? 
-				// char curC = str.charAt(i);
-				char curC = stack.pop();
+				char curC = str.charAt(i);
+				// char curC = stack.pop();
 				if(curC == '}'){
-					rightStack.push('}');
+					// rightStack.push('}');
+rightNum++;
 				}else{
-					if(!rightStack.isEmpty()){
-						rightStack.pop();
+					if(rightNum>0){
+						rightNum--;
 					}else{
 						result++;
-						rightStack.push('}');
+						rightNum++;
 					}
 				}
 			}
 			
-			result+=(rightStack.size()/2);
+			result+=(rightNum/2);
 		
 			sb.append(idx).append(". ").append(result).append("\n");
 			idx++;
