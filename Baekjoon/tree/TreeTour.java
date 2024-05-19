@@ -1,11 +1,11 @@
-package Baekjoon;
+package Baekjoon.tree;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-// 24-04-04 - 틀림
+// 24-04-04, 05-19 60min
 // https://www.acmicpc.net/problem/1991
 public class TreeTour {
 
@@ -58,11 +58,14 @@ public class TreeTour {
 		// 왼쪽 자식부터
 		if (left != '0') {
 			getPostorderTraversal(left);
-			sb.append(root);
-		} else if (right != '0') {
+		}
+		// 오른쪽 자식
+		if (right != '0') {
 			getPostorderTraversal(right);
-			sb.append(right);
-		} else {
+		}
+		// root
+		if (!visited[root - 'A']) {
+			visited[root - 'A'] = true;
 			sb.append(root);
 		}
 
@@ -72,29 +75,27 @@ public class TreeTour {
 
 	private static void getInorderTraversal(char root) {
 
-		visited[root - 'A'] = true;
+		// visited[root - 'A'] = true;
 
-		System.out.println("start: " + root);
 		char left = trees[root - 'A'][0];
 		char right = trees[root - 'A'][1];
 
 		// 왼쪽
 		if (left != '0' && !visited[left - 'A']) {
-			visited[left - 'A'] = true;
-			getPostorderTraversal(left);
-			sb.append(left);
-			if (!visited[root - 'A']) {
-				sb.append(root);
-			}
+			getInorderTraversal(left);
+			// sb.append(left);
 		}
-
+		// root
+		if (!visited[root - 'A']) {
+			visited[root - 'A'] = true;
+			sb.append(root);
+		}
 		// 오른쪽
 		if (right != '0') {
-			visited[right - 'A'] = true;
-			getPostorderTraversal(right);
-			sb.append(right);
+			// visited[right - 'A'] = true;
+			getInorderTraversal(right);
+			// sb.append(right);
 		}
-
 	}
 
 	private static void getPreorderTraversal(char root) {
@@ -103,19 +104,15 @@ public class TreeTour {
 		char left = trees[root - 'A'][0];
 		char right = trees[root - 'A'][1];
 
-		if (left != '0' || right != '0') {
+		// root에 자식이 있으면
+		// 왼쪽 자식부터
+		if (left != '0') {
+			getPreorderTraversal(left);
+		}
 
-			// root에 자식이 있으면
-			// 왼쪽 자식부터
-			if (left != '0') {
-				getPreorderTraversal(left);
-			}
-
-			// 오른쪽 자식
-			if (right != '0') {
-				getPreorderTraversal(right);
-			}
-
+		// 오른쪽 자식
+		if (right != '0') {
+			getPreorderTraversal(right);
 		}
 
 	}
