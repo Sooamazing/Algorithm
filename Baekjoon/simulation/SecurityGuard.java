@@ -33,10 +33,11 @@ public class SecurityGuard {
 			int shopDistance = shop[i][1];
 
 			int directionMult = shopDir * guardDir;
-			if (directionMult == 0) {
-				// 0인 경우
+			if (shopDir == guardDir) {
+				// 같은 방향에 있는 경우
 				result += (Math.abs(shopDistance - guardDistance));
 			} else if (directionMult == 2 || directionMult == 12) {
+				// 마주보는 경우
 				if (directionMult == 2) {
 					result += Math.min((shopDistance + guardDistance), (2 * width - (shopDistance + guardDistance)));
 					result += height;
@@ -45,6 +46,7 @@ public class SecurityGuard {
 					result += width;
 				}
 			} else {
+				// 옆에 붙어 있는 경우
 				if (directionMult == 3) {
 					result += (shopDistance + guardDistance);
 				} else if (directionMult == 6) {
@@ -65,23 +67,6 @@ public class SecurityGuard {
 				}
 
 			}
-
-			// if (guardDir == shopDir) {
-			// 	if (guardDir == 1 || guardDir == 2) {
-			// 		result += Math.min(guardDistance + shopDistance + width, 2 * width - guardDistance - shopDistance);
-			// 	} else {
-			// 		result += Math.min(guardDistance + shopDistance + height,
-			// 			2 * height - guardDistance - shopDistance);
-			// 	}
-			// } else {
-			// 	if (guardDir + shopDir == 3) {
-			// 		result += guardDistance + shopDistance + width;
-			// 	} else if (guardDir + shopDir == 7) {
-			// 		result += guardDistance + shopDistance + height;
-			// 	} else {
-			// 		result += guardDistance + shopDistance;
-			// 	}
-			// }
 		}
 		System.out.println(result);
 
