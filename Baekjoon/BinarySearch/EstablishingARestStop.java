@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 // 2 97 100
 // 1 99
-// 0 10 512 -> 답 47?
+// 0 10 512 -> 답 47
 // 24-06-14 120min
 // https://www.acmicpc.net/problem/1477
 public class EstablishingARestStop {
@@ -35,21 +35,55 @@ public class EstablishingARestStop {
 		}
 		Arrays.sort(stops);
 
-		int left = 1;
-		int right = highwayLength - 1;
+		// int left = 1;
+		// int right = highwayLength - 1; // -1 하는 것과 하지 않는 것의 차이는..? 왜... -1하면 108ms인 거지? 둘 중 뭐가 맞을까..? -1이 맞지 않을까?
+		// // 		근데 왜 둘 다 정답일까..?
+		//
+		// // left <= right , right = mid + 1; 인 것과 차이 확인.
+		// while (left < right) {
+		// 	int mid = (left + right) / 2;
+		//
+		// 	int curCnt = 0;
+		// 	for (int i = 1; i < originStopNum + 2; i++) {
+		// 		int distance = stops[i] - stops[i - 1]; // distance에 추가로 -1 해 주는 건 왜?
+		// 		curCnt += (distance / mid - 1); // -1은 나누면서 현재+추가가 되고, 추가되는 곳만 cnt하기 위해.
+		// 		// if (distance % mid == 0) {
+		// 		// 	curCnt--; // 왜..?
+		// 		// }
+		// 		if (distance % mid > 0)
+		// 			curCnt++;
+		// 	}
+		//
+		// 	if (curCnt > moreStopNum) {
+		// 		left = mid + 1;
+		// 	} else {
+		// 		right = mid;
+		// 	}
+		//
+		// }
 
-		// left <= right , right = mid + 1; 인 것과 차이 확인.
+		int[] distances = new int[originStopNum + 1];
+		// 1 <= 휴게소의 위치 <= 고속도로 길이 -1
+		// distances[0] = stops[0];
+		// distances[originStopNum] = highwayLength - stops[originStopNum - 1]; // 이게 틀렸다!
+		for (int i = 0; i < originStopNum + 1; i++) {
+			distances[i] = (stops[i + 1] - stops[i]);
+		}
+		Arrays.sort(distances);
+
+		// 원래 휴게소가 0개인 경우, left == right. 이기 때문에 left가 1이어야 함.
+		// int left = distances[0];
+		int left = 1;
+		int right = distances[originStopNum];
 		while (left < right) {
 			int mid = (left + right) / 2;
 
 			int curCnt = 0;
-			for (int i = 1; i < originStopNum + 2; i++) {
-				int distance = stops[i] - stops[i - 1]; // distance에 추가로 -1 해 주는 건 왜?
-				curCnt += (distance / mid - 1); // -1은 나누면서 현재+추가가 되고, 추가되는 곳만 cnt하기 위해.
-				// if (distance % mid == 0) {
-				// 	curCnt--; // 왜..?
-				// }
-				if (distance % mid > 0)
+			for (int i = 0; i < originStopNum + 1; i++) {
+				curCnt += (distances[i] / mid - 1);
+				// if (distances[i] % mid == 0)
+				// 	curCnt--;
+				if (distances[i] % mid > 0)
 					curCnt++;
 			}
 
@@ -60,38 +94,6 @@ public class EstablishingARestStop {
 			}
 
 		}
-
-		// int[] distances = new int[originStopNum + 1];
-		// // 1 <= 휴게소의 위치 <= 고속도로 길이 -1
-		// // distances[0] = stops[0];
-		// // distances[originStopNum] = highwayLength - stops[originStopNum - 1]; // 이게 틀렸다!
-		// for (int i = 0; i < originStopNum + 1; i++) {
-		// 	distances[i] = (stops[i + 1] - stops[i]);
-		// }
-		// Arrays.sort(distances);
-		//
-		// int left = distances[0];
-		// int right = distances[originStopNum];
-		// while (left < right) {
-		// 	int mid = (left + right) / 2;
-		//
-		// 	int curCnt = 0;
-		// 	for (int i = 0; i < originStopNum + 1; i++) {
-		// 		curCnt += distances[i] / mid;
-		// 		// if (distances[i] % mid == 0)
-		// 		// 	curCnt--;
-		// 		if (distances[i] % mid > 0)
-		// 			curCnt++;
-		// 		curCnt--;
-		// 	}
-		//
-		// 	if (curCnt > moreStopNum) {
-		// 		left = mid + 1;
-		// 	} else {
-		// 		right = mid;
-		// 	}
-		//
-		// }
 
 		System.out.println(left);
 
