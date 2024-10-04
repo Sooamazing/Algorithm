@@ -1,0 +1,30 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+// 24-10-04 5min
+// https://www.acmicpc.net/problem/5597
+class Main
+{
+	public static void main (String[] args) throws IOException
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+StringBuilder sb = new StringBuilder();
+boolean[] attendance = new boolean[31];
+
+for(int i = 0; i<28 ; i++){
+attendance[Integer.parseInt(br.readLine())]=true;
+}
+
+for(int i = 1; i<31 ; i++){
+if(attendance[i]){
+continue;
+}
+sb.append(i).append("\n");
+}
+
+System.out.println(sb);
+	}
+}
