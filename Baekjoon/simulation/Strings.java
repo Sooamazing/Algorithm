@@ -5,6 +5,8 @@ import java.lang.*;
 import java.io.*;
 
 
+// 24-11-01 5min
+// https://www.acmicpc.net/problem/9086
 class Main
 {
 	public static void main (String[] args) throws IOException
