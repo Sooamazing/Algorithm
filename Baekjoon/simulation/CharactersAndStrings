@@ -1,0 +1,17 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+// 24-11-05 5min
+// https://www.acmicpc.net/problem/27866
+class Main
+{
+	public static void main (String[] args) throws IOException
+	{
+		// your code goes here
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+String str = br.readLine();
+int index = Integer.parseInt(br.readLine());
+System.out.println(str.chatAt(index));
+	}
+}
