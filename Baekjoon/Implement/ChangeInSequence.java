@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringJoiner;
 import java.util.StringTokenizer;
 
-// 25-08-13
+// 25-08-13 15min
 // https://www.acmicpc.net/problem/1551
 public class ChangeInSequence {
 
@@ -20,19 +20,18 @@ public class ChangeInSequence {
         int replay = Integer.parseInt(st.nextToken());
         st = new StringTokenizer(br.readLine(), ",");
         int[] arr = new int[total];
-        int[] result = new int[total];
         for (int i = 0; i < total; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
+        int[] result = arr; // 한 번도 하지 않으면 자기자신.
 
         for (int i = 0; i < replay; i++) {
-            int[] temp = new int[total - 1];
-            for (int j = 0; j < total - (i + 1); j++) {
-                temp[j] = result[j + 1] - result[j];
+            result = new int[total - 1];
+            for (int j = 0; j < total - 1; j++) {
+                result[j] = arr[j + 1] - arr[j];
             }
             total--;
-            result = new int[total];
-            result = temp;
+            arr = result;
         }
 
         for (int i = 0; i < total; i++) {
