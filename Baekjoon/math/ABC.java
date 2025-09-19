@@ -3,9 +3,10 @@ package Baekjoon.math;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
-// 25-09-19 3min
+// 25-09-19 10min
 // https://www.acmicpc.net/problem/3047
 public class ABC {
 
@@ -21,17 +22,12 @@ public class ABC {
         for (int i = 0; i < 3; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
+        Arrays.sort(arr);
 
         String line = br.readLine();
         for (int i = 0; i < 3; i++) {
             char ch = line.charAt(i);
-            if (ch == 'A') {
-                answerArr[i] = arr[0];
-            } else if (ch == 'B') {
-                answerArr[i] = arr[1];
-            } else {
-                answerArr[i] = arr[2];
-            }
+            answerArr[i] = arr[ch - 'A'];
         }
 
         for (int num : answerArr) {
